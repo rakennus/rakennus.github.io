@@ -1,0 +1,33 @@
+I"n<h1 id="was-ist-3-d-druck">Was ist 3-D Druck?</h1>
+
+<p>Beim 3-D-Druck handelt es sich um ein Fertigungsverfahren bei dem Material gezielt Schicht für Schicht über einander aufgetragen wird und so ein dreidimensionaler Körper entsteht.
+Er unterscheidet sich von Fertigungsverfahren wie Sägen, Fräsen und Schneiden, bei denen Material von einem Objekt entfernt und nicht hinzugefügt wird. Der 3-D Druck hat zum Vorteil, dass keine Späne oder sonstiger Abfälle entstehen, welche entsorgt, kompostiert oder eingeschmolzen werden müssen. Beispielsweise wird beim Fräsen von Metall etwa 50 % bis 60 % des Materials in Form von Spänen entfernt.</p>
+
+<p>Typische Werkstoffe für den 3-D-Druck sind Kunststoff, Kunstharz und Metall. Jedoch lassen sich fast alle Materialien verarbeiten. Wichtig ist dabei nur, dass sich das Material von einem beweglichen Zustand schnell verfestigen lässt. Beispielsweise durch schmelzen und abkühlen.</p>
+
+<p>Es gibt viele verschiedene 3-D-Drucker, die alle unterschiedlich arbeiten. Die Einsatzgebiete finden sich im Hobby-Bereich, in der Industrie und in der Forschung zur Herstellung von Modellen, Prototypen, Werkzeugen, mechanischen Teilen und Produkten. Daneben gibt es Anwendungen in der Kunst, in der Medizin und sogar beim Bau von Häusern.</p>
+
+<h2 id="wie-funktioniert-ein-3-d-drucker">Wie funktioniert ein 3-D-Drucker?</h2>
+
+<p>Um etwas drucken zu können, benötigt man ein digitales 3-D-Modell. Man kann diese 3-D-Modelle in einem Onlineshop kaufen, scannen, mühsam am Rechner selbst konstruiert oder auch kostenlos im Internet herunterladen.
+Damit der Drucker das Modell dann drucken kann, muss dieses in eine für ihn verständliche Sprache umgewandelt werden. Das Modell wird dazu in viele dünne Schichten unterteilt. Jede dieser Schichten hat eine Form, welche sich in einem zweidimensionalen Koordinatensystem darstellen lässt. Diese Schichten kann der Drucker nun anhand der Koordinatensysteme Schritt für Schritt nachbilden. So entsteht aus vielen zweidimensionalen Formen Schicht für Schicht ein dreidimensionales Objekt. Wie die zweidimensionalen Formen nachgebildet werden, ist von dem verwendeten Druckverfahren abhängig.</p>
+
+<h1 id="die-verschiedenen-druckverfahren">Die verschiedenen Druckverfahren.</h1>
+
+<p>Die Liste der Druckverfahren ist überwältigend. Jedoch ist die Anzahl derer, die bis heute relevant sind, ernüchternd. Im Folgenden werde ich die Funktionsweise der wichtigsten Verfahren erklären und deren Vor- und Nachteile erläutern.</p>
+
+<h2 id="fdm">FDM</h2>
+
+<p>Das bekannteste 3-D-Druck Verfahren ist wohl der FDM-Druck. Das liegt daran, dass FDM-Drucker immer günstiger werden und einfach zu bedienen sind.
+Bei diesem Verfahren wird eine Düse erhitzt, die sich computergesteuert bewegen lässt. Die Düse befindet sich über einer Fläche, dem Druckbett. Auf dieser Oberfläche wird das gesamte Objekt in einzelnen Kunststoffschichten gedruckt. Dafür wird ein dicker Kunstoffdraht durch die heiße Düse gedrückt, so dass durch die Bewegung der Düse exakt jede einzelne Schicht eines 3-D-Modells übereinander nachgebildet wird. Das ganze ist vergleichbar mit einer Tortenspritze, mit der geschmolzene Schokolade auf eine Torte aufgetragen wird.
+Um große Teile eines Objektes zu drucken, die frei in der Luft liegen und nicht direkt durch eine darunterliegende Schicht oder das Druckbett gestützt werden, benötigt man Stützstrukturen. Diese stützen das Teil und geben ihm halt und lassen sich nach dem Druck leicht entfernen.
+Der verwendete Kunststoffdraht kann aus allen möglichen Kunststoffen bestehen, solange sie sich schmelzen lassen. Geforscht wird auch an Mischungen zwischen Kunststoff und anderen Materialien wie Metallpulver oder Holzspänen.
+Damit sich das zu druckende Objekt nicht während des Druckens bewegt, wird bei fast allen FDM-Druckern das Druckbett erhitzt. So haftet das Objekt besser und verrutscht nicht.
+Es können statt Kunststoffen auch Pasten durch eine Düse gespritzt werden. So wird zum Beispiel an großen Druckern geforscht die mit Beton Häuser drucken.</p>
+
+<h2 id="vorteile-des-fdm-drucks">Vorteile des FDM-Drucks:</h2>
+
+<ul>
+  <li>Drucker sind günstig</li>
+</ul>
+:ET
