@@ -7,16 +7,16 @@ title: Rakennus
     {% for post in site.posts %}
     <li class="post">
 			<div>
-                <a class="PostTitle" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-                <p class="Info">date: {{ post.date | date: "%m/%d/%Y" }} | written by: {{ post.author }}</p>
-            </div>
+          <a class="PostTitle" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+          <p class="Info">date: {{ post.date | date: "%m/%d/%Y" }} | written by: {{ post.author }}</p>
+      </div>
 
-            {% if post.TitleImage %}
-            <center><img src="assets/images/{{ post.TitleImage }}" alt="{{ post.TitleImage }}"></center>
-            {% endif %}
+      {% if post.TitleImage %}
+      <center><img src="assets/images/{{ post.TitleImage }}" alt="{{ post.TitleImage }}"></center>
+      {% endif %}
 
-        <p class="PostTextPreview">{{ post.content | strip_html | truncatewords:50}}</p>
-        <a href="{{ post.url }}">Read more...</a>
+      <p class="PostTextPreview">{{ post.content | strip_html | truncatewords:50}}</p>
+      <a href="{{ post.url }}">Read more...</a>
 		</li>
     {% endfor %}
 </ul>

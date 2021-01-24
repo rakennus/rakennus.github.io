@@ -4,61 +4,44 @@ $borderColor: #7e96c4;
 body{
 	margin: 0;
 	padding: 0;
-	font-family: monospace;
-	background-color: rgb(231, 231, 231);
+	font-family: sans-serif;
+	background-color: rgb(255, 255, 255);
 }
 
-.current {
-  color: green;
-}
-
-#NavHeadline{
-	font-size: 3rem; 
-	font-weight: lighter; 
-	margin-bottom: 0rem; 
-	margin-top: 0rem;
-}
-
-nav{position: fixed; 
-	width: 100%; 
-	top: 0; 
-	border-bottom: solid 1px $borderColor; 
-	background-image: radial-gradient(#e4e8ed, #f1eded); 
-	padding: 1rem;
-}
-
-nav p{display: inline;}
-
-#posts{width: 50%; 
-	margin-left: 5%; 
+#posts{
+	width: 50%;
+	margin-left: 10%;
 	list-style: none;
 	margin-top: 10rem;
+	padding-left: 0;
 }
 
-#posts img{display: block; 
-	margin-left: auto; 
-	margin-right: auto; 
-	width: 90%; 
-	margin-top: 3rem; 
-	border: 1px solid $borderColor; 
+#posts img{display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	margin-top: 3rem;
+	border: 1px solid $borderColor;
 	margin: 1rem;
 }
 
 .PostTitle{
-	font-size: 4rem;  
-	text-decoration: none; 
+	font-size: 4rem;
 	color: black;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .Info{font-size: 20px;}
 
 .post{
-	background-color: white; 
-	font-size: 16px; 
-	border: 1px solid $borderColor; 
-	border-top: 10px solid $borderColor; 
-	margin-top: 3rem; 
+	background-color: white;
+	font-size: 16px;
+	border: 1px solid $borderColor;
+	border-top: 10px solid $borderColor;
+	margin-top: 3rem;
 	padding: 1rem;
+	box-shadow: 20px 20px 10px rgb(110, 110, 110);
 }
 
 .post div:first-child{border-bottom: solid 1px $borderColor;}
