@@ -1,49 +1,33 @@
-$borderColor: #7e96c4;
 
 
-body{
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
-	background-color: rgb(255, 255, 255);
+body {
+    max-width: 800px;
+    margin: auto;
+    scroll-behavior: smooth;
 }
 
-#posts{
-	width: 50%;
-	margin-left: 10%;
-	list-style: none;
-	margin-top: 10rem;
-	padding-left: 0;
+#posts {
+    margin-left: 2rem;
+    padding-left: 2rem;
+    border-left: 1px solid black;
 }
 
-#posts img{display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-	margin-top: 3rem;
-	border: 1px solid $borderColor;
-	margin: 1rem;
+.post {
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid rgb(199, 199, 199);
+    margin-bottom: 4rem;
 }
 
-.PostTitle{
-	font-size: 4rem;
-	color: black;
-	margin-bottom: 0;
-	margin-top: 0;
+.previewCheckbox {
+    cursor: pointer;
+    border-bottom: solid 1px black;
 }
 
-.Info{font-size: 20px;}
-
-.post{
-	background-color: white;
-	font-size: 16px;
-	border: 1px solid $borderColor;
-	border-top: 10px solid $borderColor;
-	margin-top: 3rem;
-	padding: 1rem;
-	box-shadow: 20px 20px 10px rgb(110, 110, 110);
+.postContant p{
+    font-family: 'Roboto Mono', monospace;
 }
 
-.post div:first-child{border-bottom: solid 1px $borderColor;}
-
-.PostTextPreview{margin: 2rem;}
+.postContant{
+    margin-top: 32px;
+}

@@ -4,61 +4,127 @@
     <meta charset="utf-8">
     <title>Rakennus</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+
   </head>
   <body>
-    <nav>
-	<a href="/"><p id="NavHeadline">Rakennus</p></a>
-	<p>aka aleksi braun</p>
-	<div class="icon-bar">
-		<a href="https://github.com/rakennus" class="github"><i class="fa github-icon"></i></a>
-		<a href="https://www.thingiverse.com/rakennus/designs" class="thingiverse"><i class="fa thingiverse-icon"></i></a>
-	</div>
-</nav>
-    <ul id="posts">
+    <h1 style="margin-top: 1rem; padding-top: 1rem; margin-bottom: 1rem; padding-bottom: 1rem;">rakennus</h1>
+    <div id="posts">
     
-    <li class="post">
-			<div>
-          <a class="PostTitle" href="/2021/01/23/RcCar.html">3D printed Rc Car</a>
-          <p class="Info">date: 01/23/2021 | written by: Rakennus</p>
-      </div>
+    <div class="post">
+        <div style="float: right; font-family: Arial, Helvetica, sans-serif; font-style: italic; color: rgb(117, 117, 117);">
+        <p style="display: inline;">3-D Druck</p><p style="display: inline; margin-left: 2rem;">01-20-2021</p>
+        </div> 
 
-      
-      <center><img src="assets/images/RcCarRendered.webp" alt="RcCarRendered.webp"></center>
-      
+        
+        
+            <div class="postContant" id="3-D Druckpreview"><h3 id="was-ist-3-d-druck">Was ist 3-D Druck?</h3> <p>Beim 3-D-Druck handelt es sich um ein Fertigungsverfahren bei dem Material gezielt Schicht für Schicht über einander aufgetragen wird und so ein dreidimensionaler Körper entsteht. Er unterscheidet sich von Fertigungsverfahren wie Sägen, Fräsen und Schneiden, bei denen Material von einem Objekt entfernt und nicht hinzugefügt wird. Der 3-D Druck hat zum Vorteil, dass keine Späne oder sonstiger Abfälle entstehen, welche entsorgt, kompostiert oder eingeschmolzen werden müssen. Beispielsweise wird beim Fräsen...</div>
+            <div class="postContant" style="display: none;" id="3-D Druckcontent"><h3 id="was-ist-3-d-druck">Was ist 3-D Druck?</h3>
 
-      <p class="PostTextPreview">
-</p>
-      <a href="/2021/01/23/RcCar.html">Read more...</a>
-		</li>
+<p>Beim 3-D-Druck handelt es sich um ein Fertigungsverfahren bei dem Material gezielt Schicht für Schicht über einander aufgetragen wird und so ein dreidimensionaler Körper entsteht.
+Er unterscheidet sich von Fertigungsverfahren wie Sägen, Fräsen und Schneiden, bei denen Material von einem Objekt entfernt und nicht hinzugefügt wird. Der 3-D Druck hat zum Vorteil, dass keine Späne oder sonstiger Abfälle entstehen, welche entsorgt, kompostiert oder eingeschmolzen werden müssen. Beispielsweise wird beim Fräsen von Metall etwa 50 % bis 60 % des Materials in Form von Spänen entfernt.</p>
+
+<p>Typische Werkstoffe für den 3-D-Druck sind Kunststoff, Kunstharz und Metall. Jedoch lassen sich fast alle Materialien verarbeiten. Wichtig ist dabei nur, dass sich das Material von einem beweglichen Zustand schnell verfestigen lässt. Beispielsweise durch schmelzen und abkühlen.</p>
+
+<p>Es gibt viele verschiedene 3-D-Drucker, die alle unterschiedlich arbeiten. Die Einsatzgebiete finden sich im Hobby-Bereich, in der Industrie und in der Forschung zur Herstellung von Modellen, Prototypen, Werkzeugen, mechanischen Teilen und Produkten. Daneben gibt es Anwendungen in der Kunst, in der Medizin und sogar beim Bau von Häusern.</p>
+
+<h3 id="wie-funktioniert-ein-3-d-drucker">Wie funktioniert ein 3-D-Drucker?</h3>
+
+<p>Um etwas drucken zu können, benötigt man ein digitales 3-D-Modell. Man kann diese 3-D-Modelle in einem Onlineshop kaufen, scannen, mühsam am Rechner selbst konstruiert oder auch kostenlos im Internet herunterladen.
+Damit der Drucker das Modell dann drucken kann, muss dieses in eine für ihn verständliche Sprache umgewandelt werden. Das Modell wird dazu in viele dünne Schichten unterteilt. Jede dieser Schichten hat eine Form, welche sich in einem zweidimensionalen Koordinatensystem darstellen lässt. Diese Schichten kann der Drucker nun anhand der Koordinatensysteme Schritt für Schritt nachbilden. So entsteht aus vielen zweidimensionalen Formen Schicht für Schicht ein dreidimensionales Objekt. Wie die zweidimensionalen Formen nachgebildet werden, ist von dem verwendeten Druckverfahren abhängig.</p>
+
+<h3 id="die-verschiedenen-druckverfahren">Die verschiedenen Druckverfahren.</h3>
+
+<p>Die Liste der Druckverfahren ist überwältigend. Jedoch ist die Anzahl derer, die bis heute relevant sind, ernüchternd. Im Folgenden werde ich die Funktionsweise der wichtigsten Verfahren erklären und deren Vor- und Nachteile erläutern.</p>
+
+<h3 id="fdm">FDM</h3>
+
+<p>Das bekannteste 3-D-Druck Verfahren ist wohl der FDM-Druck. Das liegt daran, dass FDM-Drucker immer günstiger werden und einfach zu bedienen sind.
+Bei diesem Verfahren wird eine Düse erhitzt, die sich computergesteuert bewegen lässt. Die Düse befindet sich über einer Fläche, dem Druckbett. Auf dieser Oberfläche wird das gesamte Objekt in einzelnen Kunststoffschichten gedruckt. Dafür wird ein dicker Kunstoffdraht durch die heiße Düse gedrückt, so dass durch die Bewegung der Düse exakt jede einzelne Schicht eines 3-D-Modells übereinander nachgebildet wird. Das ganze ist vergleichbar mit einer Tortenspritze, mit der geschmolzene Schokolade auf eine Torte aufgetragen wird.
+Um große Teile eines Objektes zu drucken, die frei in der Luft liegen und nicht direkt durch eine darunterliegende Schicht oder das Druckbett gestützt werden, benötigt man Stützstrukturen. Diese stützen das Teil und geben ihm halt und lassen sich nach dem Druck leicht entfernen.
+Der verwendete Kunststoffdraht kann aus allen möglichen Kunststoffen bestehen, solange sie sich schmelzen lassen. Geforscht wird auch an Mischungen zwischen Kunststoff und anderen Materialien wie Metallpulver oder Holzspänen.
+Damit sich das zu druckende Objekt nicht während des Druckens bewegt, wird bei fast allen FDM-Druckern das Druckbett erhitzt. So haftet das Objekt besser und verrutscht nicht.
+Es können statt Kunststoffen auch Pasten durch eine Düse gespritzt werden. So wird zum Beispiel an großen Druckern geforscht die mit Beton Häuser drucken.</p>
+
+<h3 id="vorteile-des-fdm-drucks">Vorteile des FDM-Drucks:</h3>
+
+<p>Drucker sind günstig
+Kunststoffdraht ist günstig
+Das Druckverfahren ist verhältnismäßig schnell
+Eignet sich für mechanische Teile
+Kann kleine und große Objekte gleich gut drucken
+Einfach zu bedienen</p>
+
+<h3 id="nachteile-des-fdm-drucks">Nachteile des FDM-Drucks:</h3>
+
+<p>Große Überhänge benötigen Stützstrukturen
+Raue Oberflächen</p>
+
+<h3 id="sla">SLA</h3>
+
+<p>Der SLA-Druck ist das älteste Druckverfahren. Das genaue Prinzip hat sich über die Zeit verändert. Ich stelle daher nur die modernste Variante vor.
+Bei dieser Technik wird eine kleine Platte in ein Becken getaucht. Dieses Becken ist mit einer Flüssigkeit gefüllt, die hart wird wenn sie mit UV-Licht in Berührung kommt. Der Boden des Beckens ist durchsichtig. Die Platte lässt sich in dem Becken nach oben und unten bewegen.
+Um den Druck zu starten, fährt die Platte bis fast auf den Grund des Beckens, sodass sich ein kleiner Spalt zwischen dem Grund des Beckens und der Platte befindet. Zwischen diesen Spalt befindet sich nun auch die Flüssigkeit. Ein feiner Laser bildet nun die erste Schicht des 3-D-Modelles nach, indem er durch den Boden des Beckens die Flüssigkeit unter dem Druckbett härtet. Für die nächste Schicht fährt der Drucker das Druckbett ein wenig nach oben. Nun ist wieder ein wenig Flüssigkeit zwischen der ersten Schicht und dem Grund des Beckens. Die nächste Schicht wird nachgebildet, wobei sie sich mit der Schicht darüber verbindet. Dieser Vorgang wird so oft wiederholt, bis das gesamte Objekt fertig ist.</p>
+
+<h3 id="vorteile-des-sla-drucks">Vorteile des SLA-Drucks:</h3>
+
+<p>Drucker sind günstig
+Druckt wahnsinnig präzise und detailreich
+Erzeugt sehr glatte Oberflächen
+Kann Überhänge drucken
+Einfach zu bedienen</p>
+
+<h3 id="nachteile-des-sla-drucks">Nachteile des SLA-Drucks:</h3>
+
+<p>Objekte sind zerbrechlich
+Die zum drucken verwendete Flüssigkeit ist nicht günstig</p>
+
+<h3 id="sls">SLS</h3>
+
+<p>In der Industrie kommen immer öfter SLS-Drucker zum Einsatz. Diese Drucker können aus Kunststoff- oder Titanpulver hochkomplexe Objekt herstellen. Man kann sich einen SLS-Drucker vorstellen wie einen umgedrehten SLA-Drucker. Für eine Schicht des zu druckenden Objektes wird jeweils eine dünne Schicht Pulver auf das Druckbett aufgetragen. Ähnlich wie beim SLA-Drucker härtet ein Laser die einzelnen Schichten des Objektes aus. Jedoch schmilzt der Laser dafür Titan oder Kunststoffpartikel zusammen, um sie zu härten. Nachdem der Druck fertig ist, wird überschüssiges Pulver abgesaugt, um beim nächsten Druck wieder verwendet zu werden.
+Der SLS-Drucker ist der bis jetzt einzige ausgereift Drucker um Objekte aus Metall herstellen zu können.
+Beim Bau von Flugzeugen versucht man möglichst Gewicht zu sparen da ein höheres Gewicht bei Flugzeugen mehr Spritverbrauch bedeutet. Erst durch SLS-Drucke können viele Bauteile leichter hergestellt werden, da gezielt an bestimmten Stellen Material weggelassen werden kann.</p>
+
+<h3 id="vorteile-des-sls-drucks">Vorteile des SLS-Drucks:</h3>
+
+<p>Sehr stabile Drucke
+Eignet sich für mechanische Teile
+Kann problemlos Überhänge drucken
+Industrietauglich</p>
+
+<h3 id="nachteile-des-sls-drucks">Nachteile des SLS-Drucks:</h3>
+
+<p>Drucker sind sehr teuer
+Material ist sehr teuer
+Objekte haben eine raue Oberfläche
+Die Bedienung ist eine Wissenschaft für sich</p>
+</div>
+            <input type="checkbox" id="3-D Druck" style="display: none;" onclick="myFunction(this.id)">
+            <label class="previewCheckbox" for="3-D Druck">read more</label>
+        
+    </div>
     
-    <li class="post">
-			<div>
-          <a class="PostTitle" href="/2021/01/20/3DPrinting.html">3-D Druck</a>
-          <p class="Info">date: 01/20/2021 | written by: Rakennus</p>
-      </div>
+</div>
 
-      
-      <center><img src="assets/images/printer.jpg" alt="printer.jpg"></center>
-      
+<script>
 
-      <p class="PostTextPreview">Was ist 3-D Druck? Beim 3-D-Druck handelt es sich um ein Fertigungsverfahren bei dem Material gezielt Schicht für Schicht über einander aufgetragen wird und so ein dreidimensionaler Körper entsteht. Er unterscheidet sich von Fertigungsverfahren wie Sägen, Fräsen und Schneiden, bei denen Material von einem Objekt entfernt und nicht hinzugefügt wird....</p>
-      <a href="/2021/01/20/3DPrinting.html">Read more...</a>
-		</li>
-    
-    <li class="post">
-			<div>
-          <a class="PostTitle" href="/2018/08/20/bananas.html">Bananas</a>
-          <p class="Info">date: 08/20/2018 | written by: jill</p>
-      </div>
+function myFunction(checkboxId) {
+  var checkBox = document.getElementById(checkboxId);
+  var content = document.getElementById(checkboxId + "content");
+  var preview = document.getElementById(checkboxId + "preview");
 
-      
+  if (checkBox.checked == true){
+    content.style.display = "block";
+    preview.style.display = "none";
+  } else {
+    content.style.display = "none";
+    preview.style.display = "block";
+  }
+}
 
-      <p class="PostTextPreview">Test Post
-</p>
-      <a href="/2018/08/20/bananas.html">Read more...</a>
-		</li>
-    
-</ul>
+</script>
 
   </body>
 </html>

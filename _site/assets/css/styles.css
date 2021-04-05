@@ -1,42 +1,13 @@
-body { margin: 0; padding: 0; font-family: sans-serif; background-color: white; }
+body { max-width: 800px; margin: auto; scroll-behavior: smooth; }
 
-#posts { width: 50%; margin-left: 10%; list-style: none; margin-top: 10rem; padding-left: 0; }
+#posts { margin-left: 2rem; padding-left: 2rem; border-left: 1px solid black; }
 
-#posts img { display: block; margin-left: auto; margin-right: auto; width: 90%; margin-top: 3rem; border: 1px solid #7e96c4; margin: 1rem; }
+.post { border-radius: 8px; padding: 1rem; border: 1px solid #c7c7c7; margin-bottom: 4rem; }
 
-.PostTitle { font-size: 4rem; color: black; margin-bottom: 0; margin-top: 0; }
+.previewCheckbox { cursor: pointer; border-bottom: solid 1px black; }
 
-.Info { font-size: 20px; }
+.postContant p { font-family: 'Roboto Mono', monospace; }
 
-.post { background-color: white; font-size: 16px; border: 1px solid #7e96c4; border-top: 10px solid #7e96c4; margin-top: 3rem; padding: 1rem; box-shadow: 20px 20px 10px #6e6e6e; }
-
-.post div:first-child { border-bottom: solid 1px #7e96c4; }
-
-.PostTextPreview { margin: 2rem; }
-
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
-.icon-bar { right: 0; top: 0; display: inline; float: right; margin-right: 2rem; }
-
-/* Style the icon bar links */
-.icon-bar a { text-align: center; padding: 8px; transition: all 0.3s ease; color: white; font-size: 20px; display: inline-block; }
-
-.fa { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-
-/* Style the social media icons with color, if you want */
-.icon-bar a:hover { background-color: rgba(110, 110, 110, 0.432); }
-
-.github { background: white; }
-
-.thingiverse { background: #30d4fd; }
-
-.thingiverse-icon { content: url(/assets/images/icons/icons8-thingiverse.svg); width: 50px; }
-
-.github-icon { content: url(/assets/images/icons/icons8-github.svg); width: 50px; }
-
-#NavHeadline { font-size: 2rem; font-weight: lighter; margin-bottom: 0rem; margin-top: 0rem; }
-
-nav { position: fixed; width: 100%; top: 0; border-bottom: solid 1px #7e96c4; padding: 1rem; background-color: #f3f3f3; }
-
-nav p { color: #303030; display: inline-block; }
+.postContant { margin-top: 32px; }
 
 /*# sourceMappingURL=styles.css.map */

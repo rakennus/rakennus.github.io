@@ -3,20 +3,40 @@ layout: default
 title: Rakennus
 ---
 
-<ul id="posts">
+<div id="posts">
     {% for post in site.posts %}
-    <li class="post">
-			<div>
-          <a class="PostTitle" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-          <p class="Info">date: {{ post.date | date: "%m/%d/%Y" }} | written by: {{ post.author }}</p>
-      </div>
+    <div class="post">
+        <div style="float: right; font-family: Arial, Helvetica, sans-serif; font-style: italic; color: rgb(117, 117, 117);">
+        <p style="display: inline;">{{ post.title }}</p><p style="display: inline; margin-left: 2rem;">{{ post.date | date: "%m-%d-%Y" }}</p>
+        </div> 
 
-      {% if post.TitleImage %}
-      <center><img src="assets/images/{{ post.TitleImage }}" alt="{{ post.TitleImage }}"></center>
-      {% endif %}
-
-      <p class="PostTextPreview">{{ post.content | strip_html | truncatewords:50}}</p>
-      <a href="{{ post.url }}">Read more...</a>
-		</li>
+        {% assign wordCount = post.content | number_of_words %}
+        {% if wordCount > 220 %}
+            <div class="postContant" id="{{ post.title }}preview">{{ post.content | truncatewords:75}}</div>
+            <div class="postContant" style="display: none;" id="{{ post.title }}content">{{ post.content }}</div>
+            <input type="checkbox" id="{{ post.title }}" style="display: none;" onclick="myFunction(this.id)">
+            <label class="previewCheckbox" for="{{ post.title }}">read more</label>
+        {% else %}
+            <div class="postContant">{{ post.content }}</div>
+        {% endif %}
+    </div>
     {% endfor %}
-</ul>
+</div>
+
+<script>
+
+function myFunction(checkboxId) {
+  var checkBox = document.getElementById(checkboxId);
+  var content = document.getElementById(checkboxId + "content");
+  var preview = document.getElementById(checkboxId + "preview");
+
+  if (checkBox.checked == true){
+    content.style.display = "block";
+    preview.style.display = "none";
+  } else {
+    content.style.display = "none";
+    preview.style.display = "block";
+  }
+}
+
+</script>
