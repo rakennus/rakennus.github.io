@@ -39,25 +39,7 @@ Die pq-Formel lautet:</p>
 
 <p>Um nun die Gleichung zu lösen müssen p und q in die pq Formel eingesetzt werden.</p>
 
-<p>Bsp:</p>
-
-\[x^2 + 4x - 10 = 0\]
-
-<p>\(p = 4\) und \(q = -10\)</p>
-
-\[x_{1|2} = -\dfrac{4}{2} \pm \sqrt{\left(\dfrac{4}{2}\right)^2-(-10)}\]
-
-<p>Nun kann die Formal ausgerechnet werden. Dies wird im Folgenden anhand des Beispieles Schritt für Schritt vorgemacht und erklärt.</p>
-
-<p>-Zuerst wird die Wurzel ausgerechnet. Dazu lösen wir die Klammern und rechnen die Brüche aus. Dabei ist sehr auf Vorzeichen zu achten, denn die \(-(-10)\) wird zu \(10\). Aus den \(\left(\dfrac{4}{2}\right)^2\) wird eine \(4\).</p>
-
-\[x_{1|2} = -\dfrac{4}{2} \pm \sqrt{4 + 10} = -\dfrac{4}{2} \pm \sqrt{14}\]
-
-<p>-Die Lösung der Wurzel berechne ich in diesem Fall mit einem Taschenrechner und wird auf zwei Nachkommastellen gerundet.</p>
-
-\[x_{1|2} = -\dfrac{4}{2} \pm 3,74\]
-
-<h3 id="fehler">Fehler</h3>
+<h3 id="zu-beachten">Zu beachten!</h3>
 
 <p>Hier ein Beispiel von einer gemischt quadratischen Gleichung auf die sich die pq-Formel anwenden lässt:</p>
 
@@ -71,13 +53,44 @@ Die pq-Formel lautet:</p>
 
 \[x^2 = 0\]
 
-<!--
-$$x_{1|2} = -\dfrac{p}{2} \pm \sqrt{\left(\dfrac{p}{2}\right)^2-q}$$
+<!--Selten hat man eine gemischt quadratische Gleichung bei der das \\(x^2\\) allein steht. Oft hat man-->
 
-$$x_1 = -\dfrac{p}{2} + \sqrt{\left(\dfrac{p}{2}\right)^2-q}$$
+<h3 id="beispiel">Beispiel:</h3>
 
-$$x_2 = -\dfrac{p}{2} - \sqrt{\left(\dfrac{p}{2}\right)^2-q}$$
--->
+\[x^2 + 4x - 10 = 0\]
+
+<p>In diesem Fall ist \(p = 4\) und \(q = -10\).</p>
+
+\[x_{1|2} = -\dfrac{4}{2} \pm \sqrt{\left(\dfrac{4}{2}\right)^2-(-10)}\]
+
+<p>Nun kann die Formel ausgerechnet werden. Dies wird im Folgenden anhand des Beispieles Schritt für Schritt vorgemacht und erklärt.</p>
+
+<p>-Die Rechnung unter der Wurzel nennt sich Radikant und wird zuerst ausgerechnet. Dazu lösen wir die Klammern und rechnen die Brüche aus. Dabei ist sehr auf Vorzeichen zu achten, denn die \(-(-10)\) wird zu \(10\). Aus den \(\left(\dfrac{4}{2}\right)^2\) wird eine \(4\).</p>
+
+\[x_{1|2} = -\dfrac{4}{2} \pm \sqrt{4 + 10} = -\dfrac{4}{2} \pm \sqrt{14}\]
+
+<p>-Die Lösung der Wurzel berechne ich in diesem Fall mit einem Taschenrechner und runde ich auf zwei Nachkommastellen auf. Nun kann der übrig gebliebene Bruch ausgerechnet werden.</p>
+
+\[x_{1|2} = -\dfrac{4}{2} \pm 3,74 = -2 \pm 3,74\]
+
+<p>-Bevor wir nun den Rest ausrechnen, müssen wir noch eine Sache wissen. Wenn man das erste Mal die pq-Formel sieht wird einem aufgefallen sein, dass dort ein
+\(x_{1|2}\)
+steht und zwischen
+\(-\dfrac{p}{2}\) und der Wurzel ein Plus und ein Minus übereinander stehen.</p>
+
+<p>Das ist eine zusammengehörende Kurzschreibweise, denn die pq-Formel besteht eigentlich aus zwei Formeln. Eine für \(x_1\) und eine für \(x_2\). Das Plus über dem Minus bedeutet, dass einmal die Wurzel zu \(-\dfrac{p}{2}\) subtrahiert und einmal addiert wird. Die Zwei Ergebnisse sind dann \(x_1\) und \(x_2\). Daraus folgt:</p>
+
+\[x_1 = -\dfrac{p}{2} + \sqrt{\left(\dfrac{p}{2}\right)^2-q}\]
+
+\[x_2 = -\dfrac{p}{2} - \sqrt{\left(\dfrac{p}{2}\right)^2-q}\]
+
+<p>Genau das machen wir jetzt auch mit unserem Beispiel und machen da weiter wo wir aufgehört haben. Der Rest ist nur noch einfache addition und subtraktion:</p>
+
+\[x_1 = -2 + 3,74 = 1,74\]
+
+\[x_2 = -2 - 3,74 = -5,74\]
+
+<p>Das Ergebnis ist \(x_1 = 1,74\) und \(x_2 = -5,74\).</p>
 </div>
             <input type="checkbox" id="Lösen quadratischer Gleichungen mit der pq Formel" style="display: none;" onclick="myFunction(this.id)">
             <label class="previewCheckbox" for="Lösen quadratischer Gleichungen mit der pq Formel">read more</label>

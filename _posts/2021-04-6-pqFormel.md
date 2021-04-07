@@ -19,25 +19,7 @@ $$x^1 + px + q = 0$$
 
 Um nun die Gleichung zu lösen müssen p und q in die pq Formel eingesetzt werden.
 
-Bsp:
-
-$$x^2 + 4x - 10 = 0$$
-
-\\(p = 4\\) und \\(q = -10\\)
-
-$$x_{1|2} = -\dfrac{4}{2} \pm \sqrt{\left(\dfrac{4}{2}\right)^2-(-10)}$$
-
-Nun kann die Formal ausgerechnet werden. Dies wird im Folgenden anhand des Beispieles Schritt für Schritt vorgemacht und erklärt.
-
--Zuerst wird die Wurzel ausgerechnet. Dazu lösen wir die Klammern und rechnen die Brüche aus. Dabei ist sehr auf Vorzeichen zu achten, denn die \\(-(-10)\\) wird zu \\(10\\). Aus den \\(\left(\dfrac{4}{2}\right)^2\\) wird eine \\(4\\).
-
-$$x_{1|2} = -\dfrac{4}{2} \pm \sqrt{4 + 10} = -\dfrac{4}{2} \pm \sqrt{14}$$
-
--Die Lösung der Wurzel berechne ich in diesem Fall mit einem Taschenrechner und wird auf zwei Nachkommastellen gerundet.
-
-$$x_{1|2} = -\dfrac{4}{2} \pm 3,74$$
-
-### Fehler
+### Zu beachten!
 
 Hier ein Beispiel von einer gemischt quadratischen Gleichung auf die sich die pq-Formel anwenden lässt:
 
@@ -51,10 +33,41 @@ $$x^2 + 8 = 0$$
 
 $$x^2 = 0$$
 
-<!--
-$$x_{1|2} = -\dfrac{p}{2} \pm \sqrt{\left(\dfrac{p}{2}\right)^2-q}$$
+<!--Selten hat man eine gemischt quadratische Gleichung bei der das \\(x^2\\) allein steht. Oft hat man-->
+
+### Beispiel:
+
+$$x^2 + 4x - 10 = 0$$
+
+In diesem Fall ist $$p = 4$$ und $$q = -10$$.
+
+$$x_{1|2} = -\dfrac{4}{2} \pm \sqrt{\left(\dfrac{4}{2}\right)^2-(-10)}$$
+
+Nun kann die Formel ausgerechnet werden. Dies wird im Folgenden anhand des Beispieles Schritt für Schritt vorgemacht und erklärt.
+
+-Die Rechnung unter der Wurzel nennt sich Radikant und wird zuerst ausgerechnet. Dazu lösen wir die Klammern und rechnen die Brüche aus. Dabei ist sehr auf Vorzeichen zu achten, denn die \\(-(-10)\\) wird zu \\(10\\). Aus den \\(\left(\dfrac{4}{2}\right)^2\\) wird eine \\(4\\).
+
+$$x_{1|2} = -\dfrac{4}{2} \pm \sqrt{4 + 10} = -\dfrac{4}{2} \pm \sqrt{14}$$
+
+-Die Lösung der Wurzel berechne ich in diesem Fall mit einem Taschenrechner und runde ich auf zwei Nachkommastellen auf. Nun kann der übrig gebliebene Bruch ausgerechnet werden.
+
+$$x_{1|2} = -\dfrac{4}{2} \pm 3,74 = -2 \pm 3,74$$
+
+-Bevor wir nun den Rest ausrechnen, müssen wir noch eine Sache wissen. Wenn man das erste Mal die pq-Formel sieht wird einem aufgefallen sein, dass dort ein
+\\(x_{1|2}\\)
+steht und zwischen
+\\(-\dfrac{p}{2}\\) und der Wurzel ein Plus und ein Minus übereinander stehen.
+
+Das ist eine zusammengehörende Kurzschreibweise, denn die pq-Formel besteht eigentlich aus zwei Formeln. Eine für \\(x_1\\) und eine für \\(x_2\\). Das Plus über dem Minus bedeutet, dass einmal die Wurzel zu \\(-\dfrac{p}{2}\\) subtrahiert und einmal addiert wird. Die Zwei Ergebnisse sind dann \\(x_1\\) und \\(x_2\\). Daraus folgt:
 
 $$x_1 = -\dfrac{p}{2} + \sqrt{\left(\dfrac{p}{2}\right)^2-q}$$
 
 $$x_2 = -\dfrac{p}{2} - \sqrt{\left(\dfrac{p}{2}\right)^2-q}$$
--->
+
+Genau das machen wir jetzt auch mit unserem Beispiel und machen da weiter wo wir aufgehört haben. Der Rest ist nur noch einfache addition und subtraktion:
+
+$$x_1 = -2 + 3,74 = 1,74$$
+
+$$x_2 = -2 - 3,74 = -5,74$$
+
+Das Ergebnis ist \\(x_1 = 1,74\\) und \\(x_2 = -5,74\\).
