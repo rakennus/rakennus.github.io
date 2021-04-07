@@ -1,0 +1,18 @@
+I"�<h2 id="was-ist-die-pq-formel">Was ist die pq Formel?</h2>
+
+<p>Die pq Formel ist eine Formel zum berechnen der Nullstelle*n von gemischt quadratischen Gleichung. Das heißt einfach formuliert, dass man mit ihr den Punkt oder, die Punkte berechnet an denen eine Parabel in einem Koordinatensystem die X-Achse schneidet. Jedoch muss eine Parabel in einem Koordinatensystem die x-Achse nicht zwingend schneiden. In diesem Fall gibt die Formel keine reelle Lösung. Jedoch gehe ich im folgenden genauer darauf ein.</p>
+
+<p>Hier ein Beispiel von einer gemischt quadratischen Gleichung auf die sich die pq-Formel anwenden lässt:</p>
+
+\[x^2 + 4x + 8 = 0\]
+
+<p>Es ist essentiell, dass die Gleichung ein \(x^2\) ein x mit einer Zahl, sowie eine weitere Zahl enthält.</p>
+
+<h2 id="wie-wird-die-pq-for">Wie wird die pq For</h2>
+
+\[x_{1|2} = -\dfrac{p}{2} \pm \sqrt{\left(\dfrac{p}{2}\right)^2-q}\]
+
+\[x_1 = -\dfrac{p}{2} + \sqrt{\left(\dfrac{p}{2}\right)^2-q}\]
+
+\[x_2 = -\dfrac{p}{2} - \sqrt{\left(\dfrac{p}{2}\right)^2-q}\]
+:ET

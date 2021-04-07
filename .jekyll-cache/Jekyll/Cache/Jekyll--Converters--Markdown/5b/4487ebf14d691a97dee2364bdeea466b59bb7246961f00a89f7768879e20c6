@@ -1,0 +1,49 @@
+I"�<h3 id="was-ist-die-pq-formel">Was ist die pq Formel?</h3>
+
+<p>Die pq Formel ist eine Formel zum berechnen der Nullstelle*n von gemischt quadratischen Gleichung. Das heißt einfach formuliert, dass man mit ihr den Punkt oder, die Punkte berechnet an denen eine Parabel in einem Koordinatensystem die X-Achse schneidet. Jedoch muss eine Parabel in einem Koordinatensystem die x-Achse nicht zwingend schneiden. In diesem Fall gibt die Formel keine reelle Lösung. Jedoch gehe ich im folgenden genauer darauf ein.
+Die pq-Formel lautet:</p>
+
+\[x_{1|2} = -\dfrac{p}{2} \pm \sqrt{\left(\dfrac{p}{2}\right)^2-q}\]
+
+<h3 id="wie-wendet-man-die-pq-formel-an">Wie wendet man die pq-Formel an?</h3>
+
+<p>Im folgenden ist die Normalform einer gemischt quadratischen Gleichung zu sehen:</p>
+
+\[x^1 + px + q = 0\]
+
+<p>Um nun die Gleichung zu lösen müssen p und q in die pq Formel eingesetzt werden.</p>
+
+<p>Bsp:</p>
+
+\[x^2 + 4x - 10 = 0\]
+
+<p>\(p = 4\) und \(q = -10\)</p>
+
+\[x_{1|2} = -\dfrac{4}{2} \pm \sqrt{\left(\dfrac{4}{2}\right)^2-(-10)}\]
+
+<p>Nun kann die Formal ausgerechnet werden. Dies wird im Folgenden anhand des Beispieles Schritt für Schritt vorgemacht und erklärt.</p>
+
+<p>-Zuerst wird die Wurzel ausgerechnet. Dazu lösen wir die Klammern und rechnen die Brüche aus. Dabei ist sehr auf Vorzeichen zu achten, denn die \(-(-10)\) wird zu \(10\). Aus den \((\dfrac{4}{2}\right)^2\)</p>
+
+<h3 id="fehler">Fehler</h3>
+
+<p>Hier ein Beispiel von einer gemischt quadratischen Gleichung auf die sich die pq-Formel anwenden lässt:</p>
+
+\[x^2 + 4x + 8 = 0\]
+
+<p>Es ist essentiell, dass die Gleichung ein \(x^2\) ein x mit einer Zahl, sowie eine weitere Zahl enthält. Folglich würden die folgenden quadratischen Gleichungen sich nicht in die pq Formel einsetzen lassen:</p>
+
+\[x^2 + 4x = 0\]
+
+\[x^2 + 8 = 0\]
+
+\[x^2 = 0\]
+
+<!--
+$$x_{1|2} = -\dfrac{p}{2} \pm \sqrt{\left(\dfrac{p}{2}\right)^2-q}$$
+
+$$x_1 = -\dfrac{p}{2} + \sqrt{\left(\dfrac{p}{2}\right)^2-q}$$
+
+$$x_2 = -\dfrac{p}{2} - \sqrt{\left(\dfrac{p}{2}\right)^2-q}$$
+-->
+:ET

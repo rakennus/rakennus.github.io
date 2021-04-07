@@ -7,7 +7,7 @@
 	],
 	"sourcesContent": [
 		"@import \"main\";",
-		"\n\nbody {\n    max-width: 800px;\n    margin: auto;\n    scroll-behavior: smooth;\n}\n\n#posts {\n    margin-left: 2rem;\n    padding-left: 2rem;\n    border-left: 1px solid black;\n}\n\n.post {\n    border-radius: 8px;\n    padding: 1rem;\n    border: 1px solid rgb(199, 199, 199);\n    margin-bottom: 4rem;\n}\n\n.previewCheckbox {\n    cursor: pointer;\n    border-bottom: solid 1px black;\n}\n\n.postContant p{\n    font-family: 'Roboto Mono', monospace;\n}\n\n.postContant{\n    margin-top: 32px;\n}"
+		"\n\nbody {\n    max-width: 900px;\n    margin: auto;\n    scroll-behavior: smooth;\n}\n\n#posts {\n    margin-left: 2rem;\n    padding-left: 2rem;\n    border-left: 1px solid black;\n}\n\n.post {\n    border-radius: 8px;\n    padding: 1rem;\n    border: 1px solid rgb(199, 199, 199);\n    margin-bottom: 4rem;\n}\n\n.previewCheckbox {\n    cursor: pointer;\n    border-bottom: solid 1px black;\n}\n\n.postContant p{\n    font-family: 'Roboto Mono', monospace;\n}\n\n.postContant{\n    margin-top: 32px;\n}"
 	],
 	"names": [],
 	"mappings": "ACEA,AAAA,IAAI,CAAC,EACD,SAAS,EAAE,KAAK,EAChB,MAAM,EAAE,IAAI,EACZ,eAAe,EAAE,MAAM,GAC1B;;AAED,AAAA,MAAM,CAAC,EACH,WAAW,EAAE,IAAI,EACjB,YAAY,EAAE,IAAI,EAClB,WAAW,EAAE,eAAe,GAC/B;;AAED,AAAA,KAAK,CAAC,EACF,aAAa,EAAE,GAAG,EAClB,OAAO,EAAE,IAAI,EACb,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,OAAkB,EACpC,aAAa,EAAE,IAAI,GACtB;;AAED,AAAA,gBAAgB,CAAC,EACb,MAAM,EAAE,OAAO,EACf,aAAa,EAAE,eAAe,GACjC;;AAED,AAAA,YAAY,CAAC,CAAC,CAAA,EACV,WAAW,EAAE,wBAAwB,GACxC;;AAED,AAAA,YAAY,CAAA,EACR,UAAU,EAAE,IAAI,GACnB"
