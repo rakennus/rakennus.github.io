@@ -1,14 +1,10 @@
-
-
 body {
-    max-width: 900px;
-    margin: auto;
     scroll-behavior: smooth;
 }
 
 #posts {
-    margin-left: 2rem;
-    padding-left: 2rem;
+    margin-left: 16px;
+    padding-left: 16px;
     border-left: 1px solid black;
 }
 
@@ -17,6 +13,7 @@ body {
     padding: 1rem;
     border: 1px solid rgb(199, 199, 199);
     margin-bottom: 4rem;
+    background-color: rgb(253, 252, 247);
 }
 
 .previewCheckbox {
@@ -24,10 +21,21 @@ body {
     border-bottom: solid 1px black;
 }
 
-.postContant p{
-    font-family: 'Roboto Mono', monospace;
-}
+.postContant p{font-family: 'Roboto Mono', monospace;}
+.postContant{margin-top: 32px;}
+pre span{font-size: 16px;}
 
-.postContant{
-    margin-top: 32px;
+.mathInput {
+    width: 32px;
+    height: 16px;
+    padding: 2px;
+    border-radius: 0;
+    border: solid 1px rgb(199, 199, 199);
+}
+#pqFormel input, #pqFormel p {display: inline;}
+#pqFormelRechner{
+    background-color: rgb(253, 253, 253);
+    padding: 16px;
+    border-radius: 6px;
+    border: solid 1px rgb(197, 197, 197);
 }

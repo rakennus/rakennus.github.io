@@ -1,28 +1,4 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Lösen quadratischer Gleichungen mit der pq Formel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
-
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-  </head>
-  <body>
-    <div style="margin: auto; max-width: 900px;">
-      <h1 style="margin-top: 1rem; padding-top: 1rem; margin-bottom: 1rem; padding-bottom: 1rem;">rakennus</h1>
-      <div id="posts">
-    <div class="post">
-        <div style="float: right; font-family: Arial, Helvetica, sans-serif; font-style: italic; color: rgb(117, 117, 117);">
-        <p style="display: inline;">Lösen quadratischer Gleichungen mit der pq Formel</p><p style="display: inline; margin-left: 2rem;">06-04-2021</p>
-        </div> 
-
-        <div class="postContant"><h3 id="was-ist-die-pq-formel">Was ist die pq Formel?</h3>
+I"!<h3 id="was-ist-die-pq-formel">Was ist die pq Formel?</h3>
 
 <p>Die pq-Formel ist eine Formel zum berechnen der Nullstelle von gemischt quadratischen Gleichung. Das heißt einfach formuliert, dass man mit ihr den Punkt oder die Punkte berechnet, an denen eine Parabel in einem Koordinatensystem die x-Achse schneidet. Jedoch muss eine Parabel in einem Koordinatensystem die x-Achse nicht zwingend schneiden. In diesem Fall gibt die Formel keine reelle Lösung. Jedoch gehe ich im Folgenden genauer darauf ein.
 Die pq-Formel lautet:</p>
@@ -120,7 +96,7 @@ wenn man die Gleichung jedoch durch die Zahl vor dem x teilt, ist die pq-Formel 
         <p> = 0</p>
     </div>
     <button onclick="rechnung()">Gleichung lösen</button>
-    <div style="margin-top: 16px;" id="mathResult">
+    <div id="mathResult">
         <div><p style="display: inline;">x1: </p><p style="display: inline;" id="x1"></p></div>
         <div><p style="display: inline;">x2: </p><p style="display: inline;" id="x2"></p></div>
     </div>
@@ -140,9 +116,4 @@ function rechnung() {
 }
 </script>
 
-</div>
-    </div>
-</div>
-    </div>
-  </body>
-</html>
+:ET

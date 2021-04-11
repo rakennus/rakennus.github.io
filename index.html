@@ -11,8 +11,8 @@ title: Rakennus
         </div> 
 
         {% assign wordCount = post.content | number_of_words %}
-        {% if wordCount > 220 %}
-            <div class="postContant" id="{{ post.title }}preview">{{ post.content | truncatewords:120}}</div>
+        {% if wordCount > 40 %}
+            <div class="postContant" id="{{ post.title }}preview">{{ post.content | truncatewords:40}}</div>
             <div class="postContant" style="display: none;" id="{{ post.title }}content">{{ post.content }}</div>
             <input type="checkbox" id="{{ post.title }}" style="display: none;" onclick="myFunction(this.id)">
             <label class="previewCheckbox" for="{{ post.title }}">read more</label>

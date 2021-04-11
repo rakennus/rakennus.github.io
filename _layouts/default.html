@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/styles.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,7 +14,9 @@
 
   </head>
   <body>
-    {% include navigation.html %}
-    {{ content }}
+    <div style="margin: auto; max-width: 900px;">
+      {% include navigation.html %}
+      {{ content }}
+    </div>
   </body>
 </html>
