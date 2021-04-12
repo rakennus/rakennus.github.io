@@ -21,17 +21,6 @@ body {
     margin: 16px 0 16px 0;
 }
 
-.post p, .post h1, .post h2, .post h3 {
-    padding: 1rem;
-}
-.postHead {
-    padding: 1rem !important;
-    float: right;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    color: rgb(117, 117, 117);
-}
-
 .gist-file {
     border: none !important;
     border-bottom: solid 1px $border-color !important;

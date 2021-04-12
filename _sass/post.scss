@@ -16,10 +16,24 @@
     border-bottom: solid 1px black;
 }
 
-.postContant p{font-family: 'Roboto Mono', monospace;}
 .postContant{margin-top: 32px;}
 pre span{font-size: 16px;}
 
 .post ul {
-    margin: 0 16px 0 16px;
+    margin: 30px 0 30px 0;
+}
+
+.post p, .post h1, .post h2, .post h3 {
+    margin: 16px 1rem 16px 1rem;
+    font-family: 'Roboto Mono', monospace;
+}
+.post h1, .post h2, .post h3 {
+    margin: 64px 1rem 0px 1rem;
+}
+.postHead {
+    padding: 1rem !important;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: rgb(117, 117, 117);
 }
