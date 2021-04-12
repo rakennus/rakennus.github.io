@@ -1,8 +1,24 @@
-body { scroll-behavior: smooth; }
+body { scroll-behavior: smooth; margin: 0; }
 
-#posts { margin-left: 16px; padding-left: 16px; border-left: 1px solid black; }
+.mathInput { width: 32px; height: 16px; padding: 2px; border-radius: 0; border: solid 1px #c7c7c7; }
 
-.post { border-radius: 8px; padding: 1rem; border: 1px solid #c7c7c7; margin-bottom: 4rem; background-color: #fdfcf7; }
+#pqFormel input, #pqFormel p { display: inline; }
+
+#pqFormelRechner { background-color: #fdfdfd; padding: 16px; border-top: solid 1px #bdbdbd; border-bottom: solid 1px #bdbdbd; margin: 16px 0 16px 0; }
+
+.post p, .post h1, .post h2, .post h3 { padding: 1rem; }
+
+.postHead { padding: 1rem !important; float: right; font-family: Arial, Helvetica, sans-serif; font-style: italic; color: #757575; }
+
+.gist-file { border: none !important; border-bottom: solid 1px #bdbdbd !important; border-top: solid 1px #bdbdbd !important; border-radius: 0 !important; }
+
+.gist-data { border-radius: 0 !important; }
+
+.gist pre { background-color: #eef5fc !important; }
+
+#posts { margin: 0 16px 0 16px; padding-left: 16px; border-left: 1px solid black; }
+
+.post { border-radius: 8px; border: 1px solid #bdbdbd; margin-bottom: 4rem; background-color: white; }
 
 .previewCheckbox { cursor: pointer; border-bottom: solid 1px black; }
 
@@ -11,11 +27,5 @@ body { scroll-behavior: smooth; }
 .postContant { margin-top: 32px; }
 
 pre span { font-size: 16px; }
-
-.mathInput { width: 32px; height: 16px; padding: 2px; border-radius: 0; border: solid 1px #c7c7c7; }
-
-#pqFormel input, #pqFormel p { display: inline; }
-
-#pqFormelRechner { background-color: #fdfdfd; padding: 16px; border-radius: 6px; border: solid 1px #c5c5c5; }
 
 /*# sourceMappingURL=styles.css.map */

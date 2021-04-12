@@ -1,29 +1,9 @@
+$border-color: #bdbdbd;
+
 body {
     scroll-behavior: smooth;
+    margin: 0;
 }
-
-#posts {
-    margin-left: 16px;
-    padding-left: 16px;
-    border-left: 1px solid black;
-}
-
-.post {
-    border-radius: 8px;
-    padding: 1rem;
-    border: 1px solid rgb(199, 199, 199);
-    margin-bottom: 4rem;
-    background-color: rgb(253, 252, 247);
-}
-
-.previewCheckbox {
-    cursor: pointer;
-    border-bottom: solid 1px black;
-}
-
-.postContant p{font-family: 'Roboto Mono', monospace;}
-.postContant{margin-top: 32px;}
-pre span{font-size: 16px;}
 
 .mathInput {
     width: 32px;
@@ -36,6 +16,31 @@ pre span{font-size: 16px;}
 #pqFormelRechner{
     background-color: rgb(253, 253, 253);
     padding: 16px;
-    border-radius: 6px;
-    border: solid 1px rgb(197, 197, 197);
+    border-top: solid 1px $border-color;
+    border-bottom: solid 1px $border-color;
+    margin: 16px 0 16px 0;
+}
+
+.post p, .post h1, .post h2, .post h3 {
+    padding: 1rem;
+}
+.postHead {
+    padding: 1rem !important;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: rgb(117, 117, 117);
+}
+
+.gist-file {
+    border: none !important;
+    border-bottom: solid 1px $border-color !important;
+    border-top: solid 1px $border-color !important;
+    border-radius: 0 !important;
+}
+.gist-data {
+    border-radius: 0 !important;
+}
+.gist pre {
+    background-color: rgb(238, 245, 252) !important;
 }

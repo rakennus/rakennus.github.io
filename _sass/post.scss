@@ -1,0 +1,21 @@
+#posts {
+    margin: 0 16px 0 16px;
+    padding-left: 16px;
+    border-left: 1px solid black;
+}
+
+.post {
+    border-radius: 8px;
+    border: 1px solid $border-color;
+    margin-bottom: 4rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.previewCheckbox {
+    cursor: pointer;
+    border-bottom: solid 1px black;
+}
+
+.postContant p{font-family: 'Roboto Mono', monospace;}
+.postContant{margin-top: 32px;}
+pre span{font-size: 16px;}
