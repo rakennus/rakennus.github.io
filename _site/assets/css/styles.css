@@ -4,7 +4,9 @@ body { scroll-behavior: smooth; margin: 0; }
 
 #pqFormel input, #pqFormel p { display: inline; }
 
-#pqFormelRechner { background-color: #fdfdfd; padding: 16px; border-top: solid 1px #bdbdbd; border-bottom: solid 1px #bdbdbd; margin: 16px 0 16px 0; }
+#pqFormelRechner { background-color: #eef5fc; border-radius: 6px; padding: 16px; }
+
+.programBox { padding: 6px; border-top: solid 1px #bdbdbd; border-bottom: solid 1px #bdbdbd; margin: 16px 0 16px 0; }
 
 .gist-file { border: none !important; border-bottom: solid 1px #bdbdbd !important; border-top: solid 1px #bdbdbd !important; border-radius: 0 !important; }
 
@@ -29,5 +31,13 @@ pre span { font-size: 16px; }
 .post h1, .post h2, .post h3 { margin: 64px 1rem 0px 1rem; }
 
 .postHead { padding: 1rem !important; float: right; font-family: Arial, Helvetica, sans-serif; font-style: italic; color: #757575; }
+
+#links a { display: inline; margin: 8px; color: black; font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold; text-decoration: none; border-bottom: 1px black solid; background-color: #f8f8f8; }
+
+#links { display: inline; margin: 0 50px 0 50px; float: right; }
+
+nav h1 { display: inline; font-size: 32px; }
+
+nav { margin: 8px 0 8px 0; padding: 8px 0 8px 0; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,6 @@
 $border-color: #bdbdbd;
+$lightgray-background: #f8f8f8;
+$preview-background: rgb(238, 245, 252);
 
 body {
     scroll-behavior: smooth;
@@ -14,8 +16,13 @@ body {
 }
 #pqFormel input, #pqFormel p {display: inline;}
 #pqFormelRechner{
-    background-color: rgb(253, 253, 253);
+    background-color: $preview-background;
+    border-radius: 6px;
     padding: 16px;
+}
+
+.programBox{
+    padding: 6px;
     border-top: solid 1px $border-color;
     border-bottom: solid 1px $border-color;
     margin: 16px 0 16px 0;
@@ -31,5 +38,5 @@ body {
     border-radius: 0 !important;
 }
 .gist pre {
-    background-color: rgb(238, 245, 252) !important;
+    background-color: $preview-background !important;
 }

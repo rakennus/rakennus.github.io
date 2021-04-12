@@ -88,6 +88,7 @@ Der Code beinhaltet eine Funktion namens pqFormel mit den Parametern p und q. We
 
 Ich habe zu dieser Javascript Funktion eine grafische Schnittstelle programmiert, mit der man nur noch eine abgebildete quadratischen Gleichung um die Werte p und q vervollständigen muss und auf Knopfdruck das Ergebnis der Gleichung bekommt.
 
+<div class="programBox">
 <div id="pqFormelRechner">
     <div style="margin-bottom: 16px;" id="pqFormel">
         <p>x² + </p>
@@ -101,6 +102,7 @@ Ich habe zu dieser Javascript Funktion eine grafische Schnittstelle programmiert
         <div><p style="display: inline;">x1: </p><p  style="display: inline;" id="x1"></p></div>
         <div><p style="display: inline;">x2: </p><p style="display: inline;" id="x2"></p></div>
     </div>
+</div>
 </div>
 
 <script>
