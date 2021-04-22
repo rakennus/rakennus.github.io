@@ -15,7 +15,7 @@ title: Rakennus
             <div class="postContant" id="{{ post.title }}preview">{{ post.content | truncatewords:40}}</div>
             <div class="postContant" style="display: none;" id="{{ post.title }}content">{{ post.content }}</div>
             <input type="checkbox" id="{{ post.title }}" style="display: none;" onclick="myFunction(this.id)">
-            <label class="previewCheckbox" for="{{ post.title }}">read more</label>
+            <label for="{{ post.title }}"><p class="previewCheckbox" id="{{ post.title }}checkboxParagraph">read more</p></label>
         {% else %}
             <div class="postContant">{{ post.content }}</div>
         {% endif %}
@@ -29,13 +29,17 @@ function myFunction(checkboxId) {
   var checkBox = document.getElementById(checkboxId);
   var content = document.getElementById(checkboxId + "content");
   var preview = document.getElementById(checkboxId + "preview");
+  var checkboxParagraph = document.getElementById(checkboxId + "checkboxParagraph");
+
 
   if (checkBox.checked == true){
     content.style.display = "block";
     preview.style.display = "none";
+    checkboxParagraph.innerHTML = "read less";
   } else {
     content.style.display = "none";
     preview.style.display = "block";
+    checkboxParagraph.innerHTML = "read more";
   }
 }
 

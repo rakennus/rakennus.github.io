@@ -13,7 +13,13 @@
 
 .previewCheckbox {
     cursor: pointer;
-    border-bottom: solid 1px black;
+    max-width: auto;
+    border: $highlight-color solid 2px;
+    margin: 16 !important;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    color: $highlight-color;
 }
 
 .postContant{margin-top: 32px;}

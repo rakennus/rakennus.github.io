@@ -18,7 +18,7 @@ body { scroll-behavior: smooth; margin: 0; }
 
 .post { border-radius: 8px; border: 1px solid #bdbdbd; margin-bottom: 4rem; background-color: white; }
 
-.previewCheckbox { cursor: pointer; border-bottom: solid 1px black; }
+.previewCheckbox { cursor: pointer; max-width: auto; border: #4d94ff solid 2px; margin: 16 !important; text-align: center; padding: 8px; border-radius: 4px; color: #4d94ff; }
 
 .postContant { margin-top: 32px; }
 
@@ -36,7 +36,7 @@ pre span { font-size: 16px; }
 
 #links { display: inline; margin: 0 50px 0 50px; float: right; }
 
-nav h1 { display: inline; font-size: 32px; }
+nav h1 { display: inline; font-size: 32px; margin: 0 !important; }
 
 nav { margin: 8px 0 8px 0; padding: 8px 0 8px 0; }
 

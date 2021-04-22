@@ -14,7 +14,7 @@
 
   </head>
   <body>
-    <div style="margin: auto; max-width: 900px;">
+    <div style="margin: auto; max-width: 900px; padding: 2px;">
       <nav>
     <h1>rakennus</h1>
     <!--
@@ -156,7 +156,7 @@ function rechnung() {
 
 </div>
             <input type="checkbox" id="Lösen quadratischer Gleichungen mit der pq Formel" style="display: none;" onclick="myFunction(this.id)">
-            <label class="previewCheckbox" for="Lösen quadratischer Gleichungen mit der pq Formel">read more</label>
+            <label for="Lösen quadratischer Gleichungen mit der pq Formel"><p class="previewCheckbox" id="Lösen quadratischer Gleichungen mit der pq FormelcheckboxParagraph">read more</p></label>
         
     </div>
     
@@ -167,7 +167,7 @@ function rechnung() {
 
         
         
-            <div class="postContant"><iframe src="assets/rakennus-game-main/index.html" width="100%" height="650px" frameborder="0"></iframe>
+            <div class="postContant"><iframe src="assets/rakennus-game-main/index.html" width="100%" frameborder="0"></iframe>
 </div>
         
     </div>
@@ -261,7 +261,7 @@ Objekte haben eine raue Oberfläche
 Die Bedienung ist eine Wissenschaft für sich</p>
 </div>
             <input type="checkbox" id="3-D Druck" style="display: none;" onclick="myFunction(this.id)">
-            <label class="previewCheckbox" for="3-D Druck">read more</label>
+            <label for="3-D Druck"><p class="previewCheckbox" id="3-D DruckcheckboxParagraph">read more</p></label>
         
     </div>
     
@@ -273,13 +273,17 @@ function myFunction(checkboxId) {
   var checkBox = document.getElementById(checkboxId);
   var content = document.getElementById(checkboxId + "content");
   var preview = document.getElementById(checkboxId + "preview");
+  var checkboxParagraph = document.getElementById(checkboxId + "checkboxParagraph");
+
 
   if (checkBox.checked == true){
     content.style.display = "block";
     preview.style.display = "none";
+    checkboxParagraph.innerHTML = "read less";
   } else {
     content.style.display = "none";
     preview.style.display = "block";
+    checkboxParagraph.innerHTML = "read more";
   }
 }
 
