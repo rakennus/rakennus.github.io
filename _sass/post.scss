@@ -5,21 +5,29 @@
 }
 
 .post {
-    border-radius: 8px;
+    border-radius: 12px;
     border: 1px solid $border-color;
     margin-bottom: 4rem;
     background-color: rgb(255, 255, 255);
 }
 
-.previewCheckbox {
+.ReadMore {
     cursor: pointer;
-    max-width: auto;
-    border: $highlight-color solid 2px;
-    margin: 16 !important;
+    border: $blue-highlight-color solid 1px;
+    max-width: 160px;
+    margin: 16px 16px 16px auto !important;
     text-align: center;
-    padding: 8px;
-    border-radius: 4px;
-    color: $highlight-color;
+    padding: 6px;
+    border-radius: 6px;
+    color: $blue-highlight-color;
+    background-color: $blue-background-color;
+}
+
+.test {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    float: right;
 }
 
 .postContant{margin-top: 32px;}

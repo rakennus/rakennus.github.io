@@ -1,7 +1,8 @@
 $border-color: #bdbdbd;
 $lightgray-background: #f8f8f8;
-$preview-background: rgb(238, 245, 252);
-$highlight-color: rgb(77, 148, 255);
+$lightblue-background: rgb(238, 245, 252);
+$blue-highlight-color: rgb(48, 111, 206);
+$blue-background-color: rgb(238, 245, 255);
 
 body {
     scroll-behavior: smooth;
@@ -17,7 +18,7 @@ body {
 }
 #pqFormel input, #pqFormel p {display: inline;}
 #pqFormelRechner{
-    background-color: $preview-background;
+    background-color: $lightblue-background;
     border-radius: 6px;
     padding: 16px;
 }
@@ -39,5 +40,5 @@ body {
     border-radius: 0 !important;
 }
 .gist pre {
-    background-color: $preview-background !important;
+    background-color: $lightblue-background !important;
 }
