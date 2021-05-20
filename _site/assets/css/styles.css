@@ -1,4 +1,4 @@
-body { scroll-behavior: smooth; margin: 0; }
+body { scroll-behavior: smooth; margin: 0; background-color: #f8f8f8; }
 
 .mathInput { width: 32px; height: 16px; padding: 2px; border-radius: 0; border: solid 1px #c7c7c7; }
 
@@ -6,19 +6,19 @@ body { scroll-behavior: smooth; margin: 0; }
 
 #pqFormelRechner { background-color: #eef5fc; border-radius: 6px; padding: 16px; }
 
-.programBox { padding: 6px; border-top: solid 1px #bdbdbd; border-bottom: solid 1px #bdbdbd; margin: 16px 0 16px 0; }
+.programBox { padding: 6px; border-top: solid 1px #a5a5a5; border-bottom: solid 1px #a5a5a5; margin: 16px 0 16px 0; }
 
-.gist-file { border: none !important; border-bottom: solid 1px #bdbdbd !important; border-top: solid 1px #bdbdbd !important; border-radius: 0 !important; }
+.gist-file { border: none !important; border-bottom: solid 1px #a5a5a5 !important; border-top: solid 1px #a5a5a5 !important; border-radius: 0 !important; }
 
 .gist-data { border-radius: 0 !important; }
 
 .gist pre { background-color: #eef5fc !important; }
 
-#posts { margin: 0 16px 0 16px; padding-left: 16px; border-left: 1px solid black; }
+#posts { margin: 0 0 0 20px; padding: 0 20px 0 20px; border-left: 1px solid #a5a5a5; }
 
-.post { border-radius: 12px; border: 1px solid #bdbdbd; margin-bottom: 4rem; background-color: white; }
+.post { border-radius: 16px; border: 1px solid #a5a5a5; margin-bottom: 4rem; background-color: white; }
 
-.ReadMore { cursor: pointer; border: #306fce solid 1px; max-width: 160px; margin: 16px 16px 16px auto !important; text-align: center; padding: 6px; border-radius: 6px; color: #306fce; background-color: #eef5ff; }
+.ReadMore { cursor: pointer; border: #306fce solid 1px; max-width: 160px; margin: 16px 16px 16px auto !important; text-align: center; padding: 6px; border-radius: 8px; color: #306fce !important; background-color: #eef5ff; }
 
 .test { height: 40px; width: 40px; background-color: black; float: right; }
 
@@ -28,18 +28,22 @@ pre span { font-size: 16px; }
 
 .post ul { margin: 30px 0 30px 0; }
 
-.post p, .post h1, .post h2, .post h3 { margin: 16px 1rem 16px 1rem; font-family: 'Roboto Mono', monospace; }
+.post p, .post h1, .post h2, .post h3 { margin: 16px 1rem 16px 1rem; font-family: 'Roboto Mono', monospace; color: #33322f; }
 
-.post h1, .post h2, .post h3 { margin: 64px 1rem 0px 1rem; }
+.post h1, .post h2, .post h3 { margin: 50px 1rem 0px 1rem; }
 
-.postHead { padding: 1rem !important; float: right; font-family: Arial, Helvetica, sans-serif; font-style: italic; color: #757575; }
+.postHead { padding: 10px !important; float: right; font-family: Arial, Helvetica, sans-serif; font-style: italic; color: #757575; }
 
-#links a { display: inline; margin: 8px; color: black; font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold; text-decoration: none; border-bottom: 1px black solid; background-color: #f8f8f8; }
+#links a { display: inline; color: black; font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold; text-decoration: none; border-bottom: 1px black solid; background-color: #f8f8f8; margin: 0 6px 0 6px; }
 
-#links { display: inline; margin: 0 50px 0 50px; float: right; }
+#links { display: inline; margin: 10px 50px 2px 50px; float: right; }
 
-nav h1 { display: inline; font-size: 32px; margin: 0 !important; }
+nav h1 { display: inline; font-size: 32px; margin: 0 !important; color: #33322f; }
 
-nav { margin: 8px 0 8px 0; padding: 8px 0 8px 0; }
+nav { padding: 20px; border-bottom: 3px #f8f8f8 solid; margin-bottom: 32px; background-color: white; position: -webkit-sticky; position: sticky; top: 0; z-index: 10; }
+
+footer { background-color: #25292e; font-family: Arial, Helvetica, sans-serif; padding: 20px 60px 20px 60px; border-top: #34393f 16px solid; border-bottom: #34393f 16px solid; }
+
+footer p { display: inline; margin: 16px; color: #d3c8c8; font-weight: bold; }
 
 /*# sourceMappingURL=styles.css.map */

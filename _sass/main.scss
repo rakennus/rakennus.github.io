@@ -1,12 +1,14 @@
-$border-color: #bdbdbd;
+$border-color: #a5a5a5;
 $lightgray-background: #f8f8f8;
 $lightblue-background: rgb(238, 245, 252);
 $blue-highlight-color: rgb(48, 111, 206);
 $blue-background-color: rgb(238, 245, 255);
+$contrast: #25292e;
 
 body {
     scroll-behavior: smooth;
     margin: 0;
+    background-color: $lightgray-background;
 }
 
 .mathInput {

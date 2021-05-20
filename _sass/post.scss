@@ -1,14 +1,14 @@
 #posts {
-    margin: 0 16px 0 16px;
-    padding-left: 16px;
-    border-left: 1px solid black;
+    margin: 0 0 0 20px;
+    padding: 0 20px 0 20px;
+    border-left: 1px solid $border-color;
 }
 
 .post {
-    border-radius: 12px;
+    border-radius: 16px;
     border: 1px solid $border-color;
     margin-bottom: 4rem;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 
 .ReadMore {
@@ -18,8 +18,8 @@
     margin: 16px 16px 16px auto !important;
     text-align: center;
     padding: 6px;
-    border-radius: 6px;
-    color: $blue-highlight-color;
+    border-radius: 8px;
+    color: $blue-highlight-color !important;
     background-color: $blue-background-color;
 }
 
@@ -40,12 +40,13 @@ pre span{font-size: 16px;}
 .post p, .post h1, .post h2, .post h3 {
     margin: 16px 1rem 16px 1rem;
     font-family: 'Roboto Mono', monospace;
+    color: #33322f;
 }
 .post h1, .post h2, .post h3 {
-    margin: 64px 1rem 0px 1rem;
+    margin: 50px 1rem 0px 1rem;
 }
 .postHead {
-    padding: 1rem !important;
+    padding: 10px !important;
     float: right;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
