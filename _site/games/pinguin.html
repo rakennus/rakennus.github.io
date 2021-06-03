@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pinguin</title>
+
+    <meta name="color-scheme" content="dark light">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+  
+  <body id="body" onscroll="scroll()">
+    <div style="position: relative;">
+      <nav id="nav">
+<div style="position: relative;">
+  
+  <h1 id="navHeadline">rakennus</h1>
+
+  <div id="navContainer">
+    <div id="inlineLinks" style="display: inline;">
+      <button id="darkmodeButton" class="darkmodeButton darkmode" onclick="darkModeFunction()">darkmode</button>
+
+
+<a href="/" >posts</a>
+
+<a href="/games.html" >games</a>
+
+
+<script>
+    var darkmode = false
+
+    function darkModeFunction() {
+        document.getElementById('body').classList.toggle('darkmode')
+        document.getElementById('nav').classList.toggle('darkmodeNavbar')
+        document.getElementById('darkmodeButton').classList.toggle('darkmode')
+    }
+</script>
+    </div>
+
+    <div id="menu-btn" class="menu-btn"><div class="menu-btn__burger"></div></div>
+  </div> 
+
+</div>
+
+<div id="dropdown" style="display: none;">
+  <ul id="listedLinks" style="list-style: none;">
+    <button id="darkmodeButton" class="darkmodeButton darkmode" onclick="darkModeFunction()">darkmode</button>
+
+
+<a href="/" >posts</a>
+
+<a href="/games.html" >games</a>
+
+
+<script>
+    var darkmode = false
+
+    function darkModeFunction() {
+        document.getElementById('body').classList.toggle('darkmode')
+        document.getElementById('nav').classList.toggle('darkmodeNavbar')
+        document.getElementById('darkmodeButton').classList.toggle('darkmode')
+    }
+</script>
+  </ul>
+</div>
+
+</nav>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn')
+  const dropdown = document.getElementById('dropdown')
+  let menuOpen = false
+
+  menuBtn.addEventListener('click', () => {
+    if(!menuOpen) {
+      menuBtn.classList.add('open')
+      menuOpen = true
+      document.getElementById("dropdown").style.display = "block"
+    } else {
+      menuBtn.classList.remove('open')
+
+      menuOpen = false
+      document.getElementById("dropdown").style.display = "none"
+    }
+  });
+</script>
+      <iframe src="https://rakennus.github.io/rakennus-game/" width="100%" height="700px" frameborder="0"></iframe>
+
+      <footer>
+    <p>&copy; Copyright 2021, Aleksi Braun</p>
+    <p>contact:</p> <p>aleksibraun@outlook.de</p>
+</footer>
+    </div>
+  </body>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</html>

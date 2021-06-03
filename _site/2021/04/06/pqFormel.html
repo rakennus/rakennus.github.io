@@ -3,32 +3,97 @@
   <head>
     <meta charset="utf-8">
     <title>Lösen quadratischer Gleichungen mit der pq Formel</title>
+
+    <meta name="color-scheme" content="dark light">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/styles.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
-
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   </head>
-  <body style="margin: auto; max-width: 900px;">
-    <div style="background-color: rgb(255, 255, 255); position: relative;">
+  
+  <body id="body" onscroll="scroll()">
+    <div style="position: relative;">
       <nav id="nav">
-    <h1>rakennus</h1>
-    <div id="links">
-        <a href="">games</a>
-        <a href="">posts</a>
-    </div>
-</nav>
-      <div id="posts">
-    <div class="post">
-        <div class="postHead">
-        <p style="display: inline;">Lösen quadratischer Gleichungen mit der pq Formel</p><p style="display: inline; margin-left: 2rem;">06-04-2021</p>
-        </div> 
+<div style="position: relative;">
+  
+  <h1 id="navHeadline">rakennus</h1>
 
-        <div class="postContant"><h3 id="was-ist-die-pq-formel">Was ist die pq Formel?</h3>
+  <div id="navContainer">
+    <div id="inlineLinks" style="display: inline;">
+      <button id="darkmodeButton" class="darkmodeButton darkmode" onclick="darkModeFunction()">darkmode</button>
+
+
+<a href="/" >posts</a>
+
+<a href="/games.html" >games</a>
+
+
+<script>
+    var darkmode = false
+
+    function darkModeFunction() {
+        document.getElementById('body').classList.toggle('darkmode')
+        document.getElementById('nav').classList.toggle('darkmodeNavbar')
+        document.getElementById('darkmodeButton').classList.toggle('darkmode')
+    }
+</script>
+    </div>
+
+    <div id="menu-btn" class="menu-btn"><div class="menu-btn__burger"></div></div>
+  </div> 
+
+</div>
+
+<div id="dropdown" style="display: none;">
+  <ul id="listedLinks" style="list-style: none;">
+    <button id="darkmodeButton" class="darkmodeButton darkmode" onclick="darkModeFunction()">darkmode</button>
+
+
+<a href="/" >posts</a>
+
+<a href="/games.html" >games</a>
+
+
+<script>
+    var darkmode = false
+
+    function darkModeFunction() {
+        document.getElementById('body').classList.toggle('darkmode')
+        document.getElementById('nav').classList.toggle('darkmodeNavbar')
+        document.getElementById('darkmodeButton').classList.toggle('darkmode')
+    }
+</script>
+  </ul>
+</div>
+
+</nav>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn')
+  const dropdown = document.getElementById('dropdown')
+  let menuOpen = false
+
+  menuBtn.addEventListener('click', () => {
+    if(!menuOpen) {
+      menuBtn.classList.add('open')
+      menuOpen = true
+      document.getElementById("dropdown").style.display = "block"
+    } else {
+      menuBtn.classList.remove('open')
+
+      menuOpen = false
+      document.getElementById("dropdown").style.display = "none"
+    }
+  });
+</script>
+      <div class="post">
+    <div class="postHead">
+    <p style="display: inline;">Lösen quadratischer Gleichungen mit der pq Formel</p><p style="display: inline; margin-left: 2rem;">06-04-2021</p>
+    </div> 
+
+    <div class="postContant"><h3 id="was-ist-die-pq-formel">Was ist die pq Formel?</h3>
 
 <p>Die pq-Formel ist eine Formel zum berechnen der Nullstelle von gemischt quadratischen Gleichung. Das heißt einfach formuliert, dass man mit ihr den Punkt oder die Punkte berechnet, an denen eine Parabel in einem Koordinatensystem die x-Achse schneidet. Jedoch muss eine Parabel in einem Koordinatensystem die x-Achse nicht zwingend schneiden. In diesem Fall gibt die Formel keine reelle Lösung. Jedoch gehe ich im Folgenden genauer darauf ein.
 Die pq-Formel lautet:</p>
@@ -149,12 +214,16 @@ function rechnung() {
 </script>
 
 </div>
-    </div>
 </div>
+
       <footer>
     <p>&copy; Copyright 2021, Aleksi Braun</p>
     <p>contact:</p> <p>aleksibraun@outlook.de</p>
 </footer>
     </div>
   </body>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </html>

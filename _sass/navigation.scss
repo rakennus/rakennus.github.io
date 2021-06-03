@@ -1,27 +1,5 @@
-#links a {
-    display: inline;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 1px black solid;
-    background-color: $lightgray-background;
-    margin: 0 6px 0 6px;
-}
-#links {
-    display: inline;
-    margin: 10px 50px 2px 50px;
-    float: right;
-}
-nav h1 {
-    display: inline;
-    font-size: 32px;
-    margin: 0 !important;
-    color: #33322f;
-}
 nav {
-    padding: 20px;
+    padding: 16px 20px 16px 20px;
     border-bottom: 3px $lightgray-background solid;
     margin-bottom: 32px;
     background-color: white;
@@ -29,4 +7,60 @@ nav {
     position: sticky;
     top: 0;
     z-index: 10;
+}
+
+#listedLinks a, #inlineLinks a {
+    color: $text-color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px black solid;
+    background-color: $lightgray-background;
+    padding: 4px;
+}
+
+#inlineLinks a {
+    display: inline;
+    line-height: 40px;
+}
+
+#listedLinks a{
+    display: block;
+    margin: 8px;
+}
+
+.currentPage {
+    color: $blue-highlight-color;
+}
+
+nav h1 {
+    display: inline;
+    font-size: 32px;
+    margin: 0 !important;
+    color: #33322f;
+}
+
+#listedLinks {
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 16px 0 0 auto;
+    width: 200px;
+}
+
+#navContainer {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-btn {
+        display: flex !important;
+    }
+    #inlineLinks {
+        display: none !important;
+    }
 }

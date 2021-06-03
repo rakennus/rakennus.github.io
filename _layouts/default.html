@@ -3,21 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+
+    <meta name="color-scheme" content="dark light">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/styles.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
-
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   </head>
-  <body style="margin: auto; max-width: 900px;">
-    <div style="background-color: rgb(255, 255, 255); position: relative;">
+  
+  <body id="body" onscroll="scroll()">
+    <div style="position: relative;">
       {% include navigation.html %}
       {{ content }}
       {% include footer.html %}
     </div>
   </body>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </html>

@@ -1,0 +1,4 @@
+- name: posts
+  link: /
+- name: games
+  link: /games.html

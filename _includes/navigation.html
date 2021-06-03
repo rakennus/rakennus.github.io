@@ -1,7 +1,41 @@
 <nav id="nav">
-    <h1>rakennus</h1>
-    <div id="links">
-        <a href="">games</a>
-        <a href="">posts</a>
+<div style="position: relative;">
+  
+  <h1 id="navHeadline">rakennus</h1>
+
+  <div id="navContainer">
+    <div id="inlineLinks" style="display: inline;">
+      {% include navButtons.html %}
     </div>
+
+    <div id="menu-btn" class="menu-btn"><div class="menu-btn__burger"></div></div>
+  </div> 
+
+</div>
+
+<div id="dropdown" style="display: none;">
+  <ul id="listedLinks" style="list-style: none;">
+    {% include navButtons.html %}
+  </ul>
+</div>
+
 </nav>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn')
+  const dropdown = document.getElementById('dropdown')
+  let menuOpen = false
+
+  menuBtn.addEventListener('click', () => {
+    if(!menuOpen) {
+      menuBtn.classList.add('open')
+      menuOpen = true
+      document.getElementById("dropdown").style.display = "block"
+    } else {
+      menuBtn.classList.remove('open')
+
+      menuOpen = false
+      document.getElementById("dropdown").style.display = "none"
+    }
+  });
+</script>

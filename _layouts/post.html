@@ -2,12 +2,10 @@
 layout: default
 ---
 
-<div id="posts">
-    <div class="post">
-        <div class="postHead">
-        <p style="display: inline;">{{ page.title }}</p><p style="display: inline; margin-left: 2rem;">{{ page.date | date: "%d-%m-%Y" }}</p>
-        </div> 
+<div class="post">
+    <div class="postHead">
+    <p style="display: inline;">{{ page.title }}</p><p style="display: inline; margin-left: 2rem;">{{ page.date | date: "%d-%m-%Y" }}</p>
+    </div> 
 
-        <div class="postContant">{{ content }}</div>
-    </div>
+    <div class="postContant">{{ content }}</div>
 </div>

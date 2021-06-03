@@ -1,0 +1,10 @@
+---
+layout: default
+title: games
+---
+
+{% for game in site.games %}
+    <a href="{{ game.url }}" class="game">
+        <h3>{{ game.name }}</h3>
+    </a>
+{% endfor %}

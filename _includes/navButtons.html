@@ -1,0 +1,15 @@
+<button id="darkmodeButton" class="darkmodeButton darkmode" onclick="darkModeFunction()">darkmode</button>
+
+{% for item in site.data.navigation %}
+<a href="{{ item.link }}" {% if page.url == item.link %}class="currentPage"{% endif %}>{{ item.name }}</a>
+{% endfor %}
+
+<script>
+    var darkmode = false
+
+    function darkModeFunction() {
+        document.getElementById('body').classList.toggle('darkmode')
+        document.getElementById('nav').classList.toggle('darkmodeNavbar')
+        document.getElementById('darkmodeButton').classList.toggle('darkmode')
+    }
+</script>

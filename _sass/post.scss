@@ -1,14 +1,14 @@
 #posts {
     margin: 0 0 0 20px;
-    padding: 0 20px 0 20px;
     border-left: 1px solid $border-color;
 }
 
 .post {
-    border-radius: 16px;
-    border: 1px solid $border-color;
-    margin-bottom: 4rem;
-    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #e9e9e9;
+    background-color: #fbf9f7;
+    margin: 0 20px 2em 20px;
+    padding: 1px 0 1px 0;
 }
 
 .ReadMore {
@@ -40,11 +40,16 @@ pre span{font-size: 16px;}
 .post p, .post h1, .post h2, .post h3 {
     margin: 16px 1rem 16px 1rem;
     font-family: 'Roboto Mono', monospace;
-    color: #33322f;
+    color: $text-color;
 }
 .post h1, .post h2, .post h3 {
     margin: 50px 1rem 0px 1rem;
 }
+
+.post p {
+    font-size: 18px;
+}
+
 .postHead {
     padding: 10px !important;
     float: right;
