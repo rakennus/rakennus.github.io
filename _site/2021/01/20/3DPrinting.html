@@ -9,12 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/styles.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   
   <body id="body" onscroll="scroll()">
-    <div style="position: relative;">
+    <div id="container">
       <nav id="nav">
 <div style="position: relative;">
   
@@ -22,23 +21,64 @@
 
   <div id="navContainer">
     <div id="inlineLinks" style="display: inline;">
-      <button id="darkmodeButton" class="darkmodeButton darkmode" onclick="darkModeFunction()">darkmode</button>
+      <button id="darkmodeButton" class="darkmodeButton" onclick="darkModeFunction()">darkmode</button>
 
 
-<a href="/" >posts</a>
+<a href="/" class="menu-link">posts</a>
 
-<a href="/games.html" >games</a>
+<a href="/games.html" class="menu-link">games</a>
 
 
 <script>
     var darkmode = false
 
+    var p = document.getElementsByTagName('p')
+    var h1 = document.getElementsByTagName('h1')
+    var h2 = document.getElementsByTagName('h2')
+    var h3 = document.getElementsByTagName('h3')
+    var h4 = document.getElementsByTagName('h4')
+
+    var a = document.getElementsByTagName('a')
+    var ReadMore = document.getElementsByClassName('ReadMore')
+
+    var posts = document.getElementsByClassName('post')
+
     function darkModeFunction() {
         document.getElementById('body').classList.toggle('darkmode')
-        document.getElementById('nav').classList.toggle('darkmodeNavbar')
-        document.getElementById('darkmodeButton').classList.toggle('darkmode')
+        document.getElementById('nav').classList.toggle('darkmode-nav')
+        document.getElementById('darkmodeButton').classList.toggle('darkmode-darkmodeButton')
+        document.getElementById('posts').classList.toggle('darkmode-posts')
+        document.getElementById('footer').classList.toggle('darkmode-footer')
+
+        for(i = 0; i < p.length; i++) {
+            p[i].classList.toggle('darkmode-paragraph')
+        }
+        for(i = 0; i < h1.length; i++) {
+            h1[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h2.length; i++) {
+            h2[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h3.length; i++) {
+            h3[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h4.length; i++) {
+            h4[i].classList.toggle('darkmode-text')
+        }
+
+        for(i = 0; i < a.length; i++) {
+            a[i].classList.toggle('darkmode-button')
+        }
+        for(i = 0; i < ReadMore.length; i++) {
+            ReadMore[i].classList.toggle('darkmode-ReadMore')
+        }
+
+        for(i = 0; i < posts.length; i++) {
+            posts[i].classList.toggle('darkmode-post')
+        }
     }
-</script>
+
+</script> 
     </div>
 
     <div id="menu-btn" class="menu-btn"><div class="menu-btn__burger"></div></div>
@@ -48,23 +88,64 @@
 
 <div id="dropdown" style="display: none;">
   <ul id="listedLinks" style="list-style: none;">
-    <button id="darkmodeButton" class="darkmodeButton darkmode" onclick="darkModeFunction()">darkmode</button>
+    <button id="darkmodeButton" class="darkmodeButton" onclick="darkModeFunction()">darkmode</button>
 
 
-<a href="/" >posts</a>
+<a href="/" class="menu-link">posts</a>
 
-<a href="/games.html" >games</a>
+<a href="/games.html" class="menu-link">games</a>
 
 
 <script>
     var darkmode = false
 
+    var p = document.getElementsByTagName('p')
+    var h1 = document.getElementsByTagName('h1')
+    var h2 = document.getElementsByTagName('h2')
+    var h3 = document.getElementsByTagName('h3')
+    var h4 = document.getElementsByTagName('h4')
+
+    var a = document.getElementsByTagName('a')
+    var ReadMore = document.getElementsByClassName('ReadMore')
+
+    var posts = document.getElementsByClassName('post')
+
     function darkModeFunction() {
         document.getElementById('body').classList.toggle('darkmode')
-        document.getElementById('nav').classList.toggle('darkmodeNavbar')
-        document.getElementById('darkmodeButton').classList.toggle('darkmode')
+        document.getElementById('nav').classList.toggle('darkmode-nav')
+        document.getElementById('darkmodeButton').classList.toggle('darkmode-darkmodeButton')
+        document.getElementById('posts').classList.toggle('darkmode-posts')
+        document.getElementById('footer').classList.toggle('darkmode-footer')
+
+        for(i = 0; i < p.length; i++) {
+            p[i].classList.toggle('darkmode-paragraph')
+        }
+        for(i = 0; i < h1.length; i++) {
+            h1[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h2.length; i++) {
+            h2[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h3.length; i++) {
+            h3[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h4.length; i++) {
+            h4[i].classList.toggle('darkmode-text')
+        }
+
+        for(i = 0; i < a.length; i++) {
+            a[i].classList.toggle('darkmode-button')
+        }
+        for(i = 0; i < ReadMore.length; i++) {
+            ReadMore[i].classList.toggle('darkmode-ReadMore')
+        }
+
+        for(i = 0; i < posts.length; i++) {
+            posts[i].classList.toggle('darkmode-post')
+        }
     }
-</script>
+
+</script> 
   </ul>
 </div>
 
@@ -93,7 +174,7 @@
     <p style="display: inline;">3-D Druck</p><p style="display: inline; margin-left: 2rem;">20-01-2021</p>
     </div> 
 
-    <div class="postContant"><h3 id="was-ist-3-d-druck">Was ist 3-D Druck?</h3>
+    <div class="postContant"><h2 id="was-ist-3-d-druck">Was ist 3-D Druck?</h2>
 
 <p>Beim 3-D-Druck handelt es sich um ein Fertigungsverfahren bei dem Material gezielt Schicht für Schicht über einander aufgetragen wird und so ein dreidimensionaler Körper entsteht.
 Er unterscheidet sich von Fertigungsverfahren wie Sägen, Fräsen und Schneiden, bei denen Material von einem Objekt entfernt und nicht hinzugefügt wird. Der 3-D Druck hat zum Vorteil, dass keine Späne oder sonstiger Abfälle entstehen, welche entsorgt, kompostiert oder eingeschmolzen werden müssen. Beispielsweise wird beim Fräsen von Metall etwa 50 % bis 60 % des Materials in Form von Spänen entfernt.</p>
@@ -102,16 +183,16 @@ Er unterscheidet sich von Fertigungsverfahren wie Sägen, Fräsen und Schneiden,
 
 <p>Es gibt viele verschiedene 3-D-Drucker, die alle unterschiedlich arbeiten. Die Einsatzgebiete finden sich im Hobby-Bereich, in der Industrie und in der Forschung zur Herstellung von Modellen, Prototypen, Werkzeugen, mechanischen Teilen und Produkten. Daneben gibt es Anwendungen in der Kunst, in der Medizin und sogar beim Bau von Häusern.</p>
 
-<h3 id="wie-funktioniert-ein-3-d-drucker">Wie funktioniert ein 3-D-Drucker?</h3>
+<h2 id="wie-funktioniert-ein-3-d-drucker">Wie funktioniert ein 3-D-Drucker?</h2>
 
 <p>Um etwas drucken zu können, benötigt man ein digitales 3-D-Modell. Man kann diese 3-D-Modelle in einem Onlineshop kaufen, scannen, mühsam am Rechner selbst konstruiert oder auch kostenlos im Internet herunterladen.
 Damit der Drucker das Modell dann drucken kann, muss dieses in eine für ihn verständliche Sprache umgewandelt werden. Das Modell wird dazu in viele dünne Schichten unterteilt. Jede dieser Schichten hat eine Form, welche sich in einem zweidimensionalen Koordinatensystem darstellen lässt. Diese Schichten kann der Drucker nun anhand der Koordinatensysteme Schritt für Schritt nachbilden. So entsteht aus vielen zweidimensionalen Formen Schicht für Schicht ein dreidimensionales Objekt. Wie die zweidimensionalen Formen nachgebildet werden, ist von dem verwendeten Druckverfahren abhängig.</p>
 
-<h3 id="die-verschiedenen-druckverfahren">Die verschiedenen Druckverfahren.</h3>
+<h2 id="die-verschiedenen-druckverfahren">Die verschiedenen Druckverfahren.</h2>
 
 <p>Die Liste der Druckverfahren ist überwältigend. Jedoch ist die Anzahl derer, die bis heute relevant sind, ernüchternd. Im Folgenden werde ich die Funktionsweise der wichtigsten Verfahren erklären und deren Vor- und Nachteile erläutern.</p>
 
-<h3 id="fdm">FDM</h3>
+<h2 id="fdm">FDM</h2>
 
 <p>Das bekannteste 3-D-Druck Verfahren ist wohl der FDM-Druck. Das liegt daran, dass FDM-Drucker immer günstiger werden und einfach zu bedienen sind.
 Bei diesem Verfahren wird eine Düse erhitzt, die sich computergesteuert bewegen lässt. Die Düse befindet sich über einer Fläche, dem Druckbett. Auf dieser Oberfläche wird das gesamte Objekt in einzelnen Kunststoffschichten gedruckt. Dafür wird ein dicker Kunstoffdraht durch die heiße Düse gedrückt, so dass durch die Bewegung der Düse exakt jede einzelne Schicht eines 3-D-Modells übereinander nachgebildet wird. Das ganze ist vergleichbar mit einer Tortenspritze, mit der geschmolzene Schokolade auf eine Torte aufgetragen wird.
@@ -120,7 +201,7 @@ Der verwendete Kunststoffdraht kann aus allen möglichen Kunststoffen bestehen, 
 Damit sich das zu druckende Objekt nicht während des Druckens bewegt, wird bei fast allen FDM-Druckern das Druckbett erhitzt. So haftet das Objekt besser und verrutscht nicht.
 Es können statt Kunststoffen auch Pasten durch eine Düse gespritzt werden. So wird zum Beispiel an großen Druckern geforscht die mit Beton Häuser drucken.</p>
 
-<h3 id="vorteile-des-fdm-drucks">Vorteile des FDM-Drucks:</h3>
+<h2 id="vorteile-des-fdm-drucks">Vorteile des FDM-Drucks:</h2>
 
 <p>Drucker sind günstig
 Kunststoffdraht ist günstig
@@ -129,18 +210,18 @@ Eignet sich für mechanische Teile
 Kann kleine und große Objekte gleich gut drucken
 Einfach zu bedienen</p>
 
-<h3 id="nachteile-des-fdm-drucks">Nachteile des FDM-Drucks:</h3>
+<h2 id="nachteile-des-fdm-drucks">Nachteile des FDM-Drucks:</h2>
 
 <p>Große Überhänge benötigen Stützstrukturen
 Raue Oberflächen</p>
 
-<h3 id="sla">SLA</h3>
+<h2 id="sla">SLA</h2>
 
 <p>Der SLA-Druck ist das älteste Druckverfahren. Das genaue Prinzip hat sich über die Zeit verändert. Ich stelle daher nur die modernste Variante vor.
 Bei dieser Technik wird eine kleine Platte in ein Becken getaucht. Dieses Becken ist mit einer Flüssigkeit gefüllt, die hart wird wenn sie mit UV-Licht in Berührung kommt. Der Boden des Beckens ist durchsichtig. Die Platte lässt sich in dem Becken nach oben und unten bewegen.
 Um den Druck zu starten, fährt die Platte bis fast auf den Grund des Beckens, sodass sich ein kleiner Spalt zwischen dem Grund des Beckens und der Platte befindet. Zwischen diesen Spalt befindet sich nun auch die Flüssigkeit. Ein feiner Laser bildet nun die erste Schicht des 3-D-Modelles nach, indem er durch den Boden des Beckens die Flüssigkeit unter dem Druckbett härtet. Für die nächste Schicht fährt der Drucker das Druckbett ein wenig nach oben. Nun ist wieder ein wenig Flüssigkeit zwischen der ersten Schicht und dem Grund des Beckens. Die nächste Schicht wird nachgebildet, wobei sie sich mit der Schicht darüber verbindet. Dieser Vorgang wird so oft wiederholt, bis das gesamte Objekt fertig ist.</p>
 
-<h3 id="vorteile-des-sla-drucks">Vorteile des SLA-Drucks:</h3>
+<h2 id="vorteile-des-sla-drucks">Vorteile des SLA-Drucks:</h2>
 
 <p>Drucker sind günstig
 Druckt wahnsinnig präzise und detailreich
@@ -148,25 +229,25 @@ Erzeugt sehr glatte Oberflächen
 Kann Überhänge drucken
 Einfach zu bedienen</p>
 
-<h3 id="nachteile-des-sla-drucks">Nachteile des SLA-Drucks:</h3>
+<h2 id="nachteile-des-sla-drucks">Nachteile des SLA-Drucks:</h2>
 
 <p>Objekte sind zerbrechlich
 Die zum drucken verwendete Flüssigkeit ist nicht günstig</p>
 
-<h3 id="sls">SLS</h3>
+<h2 id="sls">SLS</h2>
 
 <p>In der Industrie kommen immer öfter SLS-Drucker zum Einsatz. Diese Drucker können aus Kunststoff- oder Titanpulver hochkomplexe Objekt herstellen. Man kann sich einen SLS-Drucker vorstellen wie einen umgedrehten SLA-Drucker. Für eine Schicht des zu druckenden Objektes wird jeweils eine dünne Schicht Pulver auf das Druckbett aufgetragen. Ähnlich wie beim SLA-Drucker härtet ein Laser die einzelnen Schichten des Objektes aus. Jedoch schmilzt der Laser dafür Titan oder Kunststoffpartikel zusammen, um sie zu härten. Nachdem der Druck fertig ist, wird überschüssiges Pulver abgesaugt, um beim nächsten Druck wieder verwendet zu werden.
 Der SLS-Drucker ist der bis jetzt einzige ausgereift Drucker um Objekte aus Metall herstellen zu können.
 Beim Bau von Flugzeugen versucht man möglichst Gewicht zu sparen da ein höheres Gewicht bei Flugzeugen mehr Spritverbrauch bedeutet. Erst durch SLS-Drucke können viele Bauteile leichter hergestellt werden, da gezielt an bestimmten Stellen Material weggelassen werden kann.</p>
 
-<h3 id="vorteile-des-sls-drucks">Vorteile des SLS-Drucks:</h3>
+<h2 id="vorteile-des-sls-drucks">Vorteile des SLS-Drucks:</h2>
 
 <p>Sehr stabile Drucke
 Eignet sich für mechanische Teile
 Kann problemlos Überhänge drucken
 Industrietauglich</p>
 
-<h3 id="nachteile-des-sls-drucks">Nachteile des SLS-Drucks:</h3>
+<h2 id="nachteile-des-sls-drucks">Nachteile des SLS-Drucks:</h2>
 
 <p>Drucker sind sehr teuer
 Material ist sehr teuer
@@ -175,7 +256,7 @@ Die Bedienung ist eine Wissenschaft für sich</p>
 </div>
 </div>
 
-      <footer>
+      <footer id="footer">
     <p>&copy; Copyright 2021, Aleksi Braun</p>
     <p>contact:</p> <p>aleksibraun@outlook.de</p>
 </footer>

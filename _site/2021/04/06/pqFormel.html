@@ -9,12 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/styles.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   
   <body id="body" onscroll="scroll()">
-    <div style="position: relative;">
+    <div id="container">
       <nav id="nav">
 <div style="position: relative;">
   
@@ -22,23 +21,64 @@
 
   <div id="navContainer">
     <div id="inlineLinks" style="display: inline;">
-      <button id="darkmodeButton" class="darkmodeButton darkmode" onclick="darkModeFunction()">darkmode</button>
+      <button id="darkmodeButton" class="darkmodeButton" onclick="darkModeFunction()">darkmode</button>
 
 
-<a href="/" >posts</a>
+<a href="/" class="menu-link">posts</a>
 
-<a href="/games.html" >games</a>
+<a href="/games.html" class="menu-link">games</a>
 
 
 <script>
     var darkmode = false
 
+    var p = document.getElementsByTagName('p')
+    var h1 = document.getElementsByTagName('h1')
+    var h2 = document.getElementsByTagName('h2')
+    var h3 = document.getElementsByTagName('h3')
+    var h4 = document.getElementsByTagName('h4')
+
+    var a = document.getElementsByTagName('a')
+    var ReadMore = document.getElementsByClassName('ReadMore')
+
+    var posts = document.getElementsByClassName('post')
+
     function darkModeFunction() {
         document.getElementById('body').classList.toggle('darkmode')
-        document.getElementById('nav').classList.toggle('darkmodeNavbar')
-        document.getElementById('darkmodeButton').classList.toggle('darkmode')
+        document.getElementById('nav').classList.toggle('darkmode-nav')
+        document.getElementById('darkmodeButton').classList.toggle('darkmode-darkmodeButton')
+        document.getElementById('posts').classList.toggle('darkmode-posts')
+        document.getElementById('footer').classList.toggle('darkmode-footer')
+
+        for(i = 0; i < p.length; i++) {
+            p[i].classList.toggle('darkmode-paragraph')
+        }
+        for(i = 0; i < h1.length; i++) {
+            h1[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h2.length; i++) {
+            h2[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h3.length; i++) {
+            h3[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h4.length; i++) {
+            h4[i].classList.toggle('darkmode-text')
+        }
+
+        for(i = 0; i < a.length; i++) {
+            a[i].classList.toggle('darkmode-button')
+        }
+        for(i = 0; i < ReadMore.length; i++) {
+            ReadMore[i].classList.toggle('darkmode-ReadMore')
+        }
+
+        for(i = 0; i < posts.length; i++) {
+            posts[i].classList.toggle('darkmode-post')
+        }
     }
-</script>
+
+</script> 
     </div>
 
     <div id="menu-btn" class="menu-btn"><div class="menu-btn__burger"></div></div>
@@ -48,23 +88,64 @@
 
 <div id="dropdown" style="display: none;">
   <ul id="listedLinks" style="list-style: none;">
-    <button id="darkmodeButton" class="darkmodeButton darkmode" onclick="darkModeFunction()">darkmode</button>
+    <button id="darkmodeButton" class="darkmodeButton" onclick="darkModeFunction()">darkmode</button>
 
 
-<a href="/" >posts</a>
+<a href="/" class="menu-link">posts</a>
 
-<a href="/games.html" >games</a>
+<a href="/games.html" class="menu-link">games</a>
 
 
 <script>
     var darkmode = false
 
+    var p = document.getElementsByTagName('p')
+    var h1 = document.getElementsByTagName('h1')
+    var h2 = document.getElementsByTagName('h2')
+    var h3 = document.getElementsByTagName('h3')
+    var h4 = document.getElementsByTagName('h4')
+
+    var a = document.getElementsByTagName('a')
+    var ReadMore = document.getElementsByClassName('ReadMore')
+
+    var posts = document.getElementsByClassName('post')
+
     function darkModeFunction() {
         document.getElementById('body').classList.toggle('darkmode')
-        document.getElementById('nav').classList.toggle('darkmodeNavbar')
-        document.getElementById('darkmodeButton').classList.toggle('darkmode')
+        document.getElementById('nav').classList.toggle('darkmode-nav')
+        document.getElementById('darkmodeButton').classList.toggle('darkmode-darkmodeButton')
+        document.getElementById('posts').classList.toggle('darkmode-posts')
+        document.getElementById('footer').classList.toggle('darkmode-footer')
+
+        for(i = 0; i < p.length; i++) {
+            p[i].classList.toggle('darkmode-paragraph')
+        }
+        for(i = 0; i < h1.length; i++) {
+            h1[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h2.length; i++) {
+            h2[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h3.length; i++) {
+            h3[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h4.length; i++) {
+            h4[i].classList.toggle('darkmode-text')
+        }
+
+        for(i = 0; i < a.length; i++) {
+            a[i].classList.toggle('darkmode-button')
+        }
+        for(i = 0; i < ReadMore.length; i++) {
+            ReadMore[i].classList.toggle('darkmode-ReadMore')
+        }
+
+        for(i = 0; i < posts.length; i++) {
+            posts[i].classList.toggle('darkmode-post')
+        }
     }
-</script>
+
+</script> 
   </ul>
 </div>
 
@@ -93,14 +174,14 @@
     <p style="display: inline;">Lösen quadratischer Gleichungen mit der pq Formel</p><p style="display: inline; margin-left: 2rem;">06-04-2021</p>
     </div> 
 
-    <div class="postContant"><h3 id="was-ist-die-pq-formel">Was ist die pq Formel?</h3>
+    <div class="postContant"><h2 id="was-ist-die-pq-formel">Was ist die pq Formel?</h2>
 
 <p>Die pq-Formel ist eine Formel zum berechnen der Nullstelle von gemischt quadratischen Gleichung. Das heißt einfach formuliert, dass man mit ihr den Punkt oder die Punkte berechnet, an denen eine Parabel in einem Koordinatensystem die x-Achse schneidet. Jedoch muss eine Parabel in einem Koordinatensystem die x-Achse nicht zwingend schneiden. In diesem Fall gibt die Formel keine reelle Lösung. Jedoch gehe ich im Folgenden genauer darauf ein.
 Die pq-Formel lautet:</p>
 
 \[x_{1|2} = -\dfrac{p}{2} \pm \sqrt{\left(\dfrac{p}{2}\right)^2-q}\]
 
-<h3 id="wie-wendet-man-die-pq-formel-an">Wie wendet man die pq-Formel an?</h3>
+<h2 id="wie-wendet-man-die-pq-formel-an">Wie wendet man die pq-Formel an?</h2>
 
 <p>Im Folgenden ist die Normalform einer gemischt quadratischen Gleichung zu sehen:</p>
 
@@ -108,7 +189,7 @@ Die pq-Formel lautet:</p>
 
 <p>Um nun die Gleichung zu lösen, müssen p und q aus der gemischt quadratischen Gleichung in die pq-Formel eingesetzt werden.</p>
 
-<h3 id="zu-beachten">Zu beachten!</h3>
+<h2 id="zu-beachten">Zu beachten!</h2>
 
 <p>Hier ein Beispiel von einer gemischt quadratischen Gleichung, auf die sich die pq-Formel anwenden lässt:</p>
 
@@ -129,7 +210,7 @@ wenn man die Gleichung jedoch durch die Zahl vor dem x teilt, ist die pq-Formel 
 
 \[=x^2 + 4x + 8 = 0\]
 
-<h3 id="beispiel">Beispiel:</h3>
+<h2 id="beispiel">Beispiel:</h2>
 
 <p>Im Folgendem wird anhand eines Beispieles vorgeführt, wie man mit der pq-Formel eine gemischt quadratischen Gleichung löst.</p>
 
@@ -172,7 +253,7 @@ wenn man die Gleichung jedoch durch die Zahl vor dem x teilt, ist die pq-Formel 
 
 <p>Das Ergebnis ist \(x_1 = 1,74\) und \(x_2 = -5,74\).</p>
 
-<h3 id="praktische-anwendung-der-pq-formel">praktische Anwendung der pq-Formel</h3>
+<h2 id="praktische-anwendung-der-pq-formel">praktische Anwendung der pq-Formel</h2>
 
 <p>Die pq-Formel eignet sich besonders für Computerprogrammen, in denen quadratischen Gleichung gelöst werden müssen. Sie lässt sich nämlich in die meisten Computersprachen übersetzen. Als Beispiel habe ich einmal so einfach wie möglich die pq-Formel in die Web-Programmiersprache Javascript übersetzt:</p>
 
@@ -216,7 +297,7 @@ function rechnung() {
 </div>
 </div>
 
-      <footer>
+      <footer id="footer">
     <p>&copy; Copyright 2021, Aleksi Braun</p>
     <p>contact:</p> <p>aleksibraun@outlook.de</p>
 </footer>

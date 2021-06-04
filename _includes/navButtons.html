@@ -1,15 +1,56 @@
-<button id="darkmodeButton" class="darkmodeButton darkmode" onclick="darkModeFunction()">darkmode</button>
+<button id="darkmodeButton" class="darkmodeButton" onclick="darkModeFunction()">darkmode</button>
 
 {% for item in site.data.navigation %}
-<a href="{{ item.link }}" {% if page.url == item.link %}class="currentPage"{% endif %}>{{ item.name }}</a>
+<a href="{{ item.link }}" class="menu-link{% if page.url == item.link %}currentPage{% endif %}">{{ item.name }}</a>
 {% endfor %}
 
 <script>
     var darkmode = false
 
+    var p = document.getElementsByTagName('p')
+    var h1 = document.getElementsByTagName('h1')
+    var h2 = document.getElementsByTagName('h2')
+    var h3 = document.getElementsByTagName('h3')
+    var h4 = document.getElementsByTagName('h4')
+
+    var a = document.getElementsByTagName('a')
+    var ReadMore = document.getElementsByClassName('ReadMore')
+
+    var posts = document.getElementsByClassName('post')
+
     function darkModeFunction() {
         document.getElementById('body').classList.toggle('darkmode')
-        document.getElementById('nav').classList.toggle('darkmodeNavbar')
-        document.getElementById('darkmodeButton').classList.toggle('darkmode')
+        document.getElementById('nav').classList.toggle('darkmode-nav')
+        document.getElementById('darkmodeButton').classList.toggle('darkmode-darkmodeButton')
+        document.getElementById('posts').classList.toggle('darkmode-posts')
+        document.getElementById('footer').classList.toggle('darkmode-footer')
+
+        for(i = 0; i < p.length; i++) {
+            p[i].classList.toggle('darkmode-paragraph')
+        }
+        for(i = 0; i < h1.length; i++) {
+            h1[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h2.length; i++) {
+            h2[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h3.length; i++) {
+            h3[i].classList.toggle('darkmode-text')
+        }
+        for(i = 0; i < h4.length; i++) {
+            h4[i].classList.toggle('darkmode-text')
+        }
+
+        for(i = 0; i < a.length; i++) {
+            a[i].classList.toggle('darkmode-button')
+        }
+        for(i = 0; i < ReadMore.length; i++) {
+            ReadMore[i].classList.toggle('darkmode-ReadMore')
+        }
+
+        for(i = 0; i < posts.length; i++) {
+            posts[i].classList.toggle('darkmode-post')
+        }
     }
-</script>
+
+</script> 

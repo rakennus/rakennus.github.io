@@ -2,8 +2,9 @@ footer {
     background-color: $contrast;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px 60px 20px 60px;
-    border-top: #34393f 16px solid;
-    border-bottom: #34393f 16px solid;
+    border: #34393f 16px solid;
+    border-right: none;
+    border-left: none;
 }
 
 footer p {

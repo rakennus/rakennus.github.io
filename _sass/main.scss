@@ -6,52 +6,34 @@ $blue-background-color: rgb(238, 245, 255);
 $contrast: #25292e;
 $text-color: #33322f;
 
-$not-quite-black: #36393f;
-$not-quite-white: rgb(250, 250, 250);
+//darkmode
+
+$not-quite-black: #181818;
+$not-even-quite-black: #282828;
+$not-quite-white: #fff;
 
 body {
-    position: relative;
-    scroll-behavior: smooth;
     margin: 0;
-    background: gradient(rgb(255, 255, 255) 0%, rgb(193, 205, 218) 100%); 
-    background-attachment: fixed;
-    background-size: cover;
     min-height: 100% !important;
     margin: auto;
     max-width: 1000px;
 }
 
-.mathInput {
-    width: 32px;
-    height: 16px;
-    padding: 2px;
-    border-radius: 0;
-    border: solid 1px rgb(199, 199, 199);
-}
-#pqFormel input, #pqFormel p {display: inline;}
-#pqFormelRechner{
-    background-color: $lightblue-background;
-    border-radius: 6px;
-    padding: 16px;
+#container {
+    scroll-behavior: smooth;
+    position: relative;
 }
 
-.programBox{
-    padding: 6px;
-    border-top: solid 1px $border-color;
-    border-bottom: solid 1px $border-color;
-    margin: 16px 0 16px 0;
-    background-color: white;
+.post p, .post h1, .post h2, .post h3 {
+    margin: 16px 1rem 16px 1rem;
+    font-family: 'Roboto Mono', monospace;
+    color: $text-color;
+}
+.post h1, .post h2, .post h3 {
+    margin: 50px 1rem 0px 1rem;
+    font-family: 'Baloo Tammudu 2', cursive;
 }
 
-.gist-file {
-    border: none !important;
-    border-bottom: solid 1px $border-color !important;
-    border-top: solid 1px $border-color !important;
-    border-radius: 0 !important;
-}
-.gist-data {
-    border-radius: 0 !important;
-}
-.gist pre {
-    background-color: $lightblue-background !important;
+.post p {
+    font-size: 18px;
 }

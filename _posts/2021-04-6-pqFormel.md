@@ -4,14 +4,14 @@ layout: post
 author: Rakennus
 ---
 
-### Was ist die pq Formel?
+## Was ist die pq Formel?
 
 Die pq-Formel ist eine Formel zum berechnen der Nullstelle von gemischt quadratischen Gleichung. Das heißt einfach formuliert, dass man mit ihr den Punkt oder die Punkte berechnet, an denen eine Parabel in einem Koordinatensystem die x-Achse schneidet. Jedoch muss eine Parabel in einem Koordinatensystem die x-Achse nicht zwingend schneiden. In diesem Fall gibt die Formel keine reelle Lösung. Jedoch gehe ich im Folgenden genauer darauf ein.
 Die pq-Formel lautet:
 
 $$x_{1|2} = -\dfrac{p}{2} \pm \sqrt{\left(\dfrac{p}{2}\right)^2-q}$$
 
-### Wie wendet man die pq-Formel an?
+## Wie wendet man die pq-Formel an?
 
 Im Folgenden ist die Normalform einer gemischt quadratischen Gleichung zu sehen:
 
@@ -19,7 +19,7 @@ $$ax^2 + px + q = 0$$
 
 Um nun die Gleichung zu lösen, müssen p und q aus der gemischt quadratischen Gleichung in die pq-Formel eingesetzt werden.
 
-### Zu beachten!
+## Zu beachten!
 
 Hier ein Beispiel von einer gemischt quadratischen Gleichung, auf die sich die pq-Formel anwenden lässt:
 
@@ -41,7 +41,7 @@ $$4x^2 + 16x + 32 = 0 | :4$$
 $$=x^2 + 4x + 8 = 0$$
 
 
-### Beispiel:
+## Beispiel:
 
 Im Folgendem wird anhand eines Beispieles vorgeführt, wie man mit der pq-Formel eine gemischt quadratischen Gleichung löst.
 
@@ -78,7 +78,7 @@ $$x_2 = -2 - 3,74 = -5,74$$
 
 Das Ergebnis ist \\(x_1 = 1,74\\) und \\(x_2 = -5,74\\).
 
-### praktische Anwendung der pq-Formel
+## praktische Anwendung der pq-Formel
 
 Die pq-Formel eignet sich besonders für Computerprogrammen, in denen quadratischen Gleichung gelöst werden müssen. Sie lässt sich nämlich in die meisten Computersprachen übersetzen. Als Beispiel habe ich einmal so einfach wie möglich die pq-Formel in die Web-Programmiersprache Javascript übersetzt:
 

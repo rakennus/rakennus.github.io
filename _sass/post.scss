@@ -37,23 +37,45 @@ pre span{font-size: 16px;}
     margin: 30px 0 30px 0;
 }
 
-.post p, .post h1, .post h2, .post h3 {
-    margin: 16px 1rem 16px 1rem;
-    font-family: 'Roboto Mono', monospace;
-    color: $text-color;
-}
-.post h1, .post h2, .post h3 {
-    margin: 50px 1rem 0px 1rem;
-}
-
-.post p {
-    font-size: 18px;
-}
-
 .postHead {
     padding: 10px !important;
     float: right;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     color: rgb(117, 117, 117);
+}
+
+.mathInput {
+    width: 32px;
+    height: 16px;
+    padding: 2px;
+    border-radius: 0;
+    border: solid 1px rgb(199, 199, 199);
+}
+#pqFormel input, #pqFormel p {display: inline;}
+#pqFormelRechner{
+    background-color: $lightblue-background;
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.programBox{
+    padding: 6px;
+    border-top: solid 1px $border-color;
+    border-bottom: solid 1px $border-color;
+    margin: 16px 0 16px 0;
+    background-color: white;
+}
+
+.gist-file {
+    border: none !important;
+    border-bottom: solid 1px $border-color !important;
+    border-top: solid 1px $border-color !important;
+    border-radius: 0 !important;
+}
+.gist-data {
+    border-radius: 0 !important;
+}
+.gist pre {
+    background-color: $lightblue-background !important;
 }
