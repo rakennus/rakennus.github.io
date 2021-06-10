@@ -1,4 +1,4 @@
-body { margin: 0; min-height: 100% !important; margin: auto; max-width: 1000px; }
+body { margin: 0; min-height: 100% !important; margin: auto; max-width: 1000px; background-color: white; }
 
 #container { scroll-behavior: smooth; position: relative; }
 
@@ -7,6 +7,14 @@ body { margin: 0; min-height: 100% !important; margin: auto; max-width: 1000px; 
 .post h1, .post h2, .post h3 { margin: 50px 1rem 0px 1rem; font-family: 'Baloo Tammudu 2', cursive; }
 
 .post p { font-size: 18px; }
+
+.carousel { overflow-x: scroll; grid-auto-flow: column; display: grid; }
+
+.Carousel-Button { position: absolute; height: 100%; width: 50px; top: 0; }
+
+.Carousel-Button-Left { left: 0; }
+
+.Carousel-Button-Right { right: 0; }
 
 #posts { margin: 0 0 0 20px; border-left: 1px solid #a5a5a5; }
 
@@ -74,9 +82,11 @@ footer p { display: inline; margin: 16px; color: #d3c8c8; font-weight: bold; }
 
 .menu-btn.open .menu-btn__burger::after { transform: rotate(-45deg); }
 
-.game { font-family: Arial, Helvetica, sans-serif; border: #a5a5a5 solid 3px; width: 200px; margin: 8px; padding: 8px; display: inline-block; color: black; height: 100px; border-radius: 16px; }
+.game { font-family: Arial, Helvetica, sans-serif; border: #dfdfdf solid 1px; width: 300px; margin: 8px; padding: 8px; color: black; height: 160px; border-radius: 6px; }
 
 .game h3 { margin: 0; font-weight: normal; }
+
+#games { position: relative; padding: 0 50px 0 50px; margin: 20px 0 20px 0; }
 
 .darkmodeButton { content: 'darkmode'; cursor: pointer; font-family: Arial, Helvetica, sans-serif; border: none; font-size: 20px; font-weight: bold; margin: 16px; text-align: center; padding: 4px; }
 

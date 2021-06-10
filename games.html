@@ -3,8 +3,14 @@ layout: default
 title: games
 ---
 
-{% for game in site.games %}
-    <a href="{{ game.url }}" class="game">
-        <h3>{{ game.name }}</h3>
-    </a>
-{% endfor %}
+<div id="games">
+    <div class="carousel">
+        {% for game in site.games %}
+            <a href="{{ game.url }}" class="game">
+                <h3>{{ game.name }}</h3>
+            </a>
+        {% endfor %}
+    </div>
+    <button class="Carousel-Button Carousel-Button-Left">&#10094;</button>
+    <button class="Carousel-Button Carousel-Button-Right">&#10095;</button>
+</div>
