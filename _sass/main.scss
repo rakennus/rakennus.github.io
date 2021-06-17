@@ -1,3 +1,5 @@
+// color variables
+
 $border-color: #a5a5a5;
 $light-border-color: #dfdfdf;
 $lightgray-background: #f1f1f1;
@@ -11,29 +13,28 @@ $text-color: #33322f;
 
 $not-quite-black: #181818;
 $not-even-quite-black: #282828;
-$not-quite-white: #fff;
+$not-quite-white: rgb(238, 237, 236);
 
 body {
     margin: 0;
-    min-height: 100% !important;
     margin: auto;
     max-width: 1000px;
     background-color: white;
+    scroll-behavior: smooth;
 }
 
 #container {
-    scroll-behavior: smooth;
     position: relative;
 }
 
 .post p, .post h1, .post h2, .post h3 {
     margin: 16px 1rem 16px 1rem;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono';
     color: $text-color;
 }
 .post h1, .post h2, .post h3 {
     margin: 50px 1rem 0px 1rem;
-    font-family: 'Baloo Tammudu 2', cursive;
+    font-family: 'Baloo Tammudu 2';
 }
 
 .post p {

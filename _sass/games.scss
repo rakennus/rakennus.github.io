@@ -1,12 +1,15 @@
-.game {
+.game a {
     font-family: Arial, Helvetica, sans-serif;
     border: $light-border-color solid 1px;
     width: 300px;
-    margin: 8px;
     padding: 8px;
     color: black;
     height: 160px;
     border-radius: 6px;
+    display: block;
+}
+.game {
+    padding: 8px;
 }
 .game h3 {
     margin: 0;

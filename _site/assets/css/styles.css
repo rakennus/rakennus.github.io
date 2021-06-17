@@ -1,10 +1,24 @@
-body { margin: 0; min-height: 100% !important; margin: auto; max-width: 1000px; background-color: white; }
+@font-face { font-family: 'Roboto Mono'; src: url("/assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf") format("truetype"); font-style: normal; }
 
-#container { scroll-behavior: smooth; position: relative; }
+@font-face { font-family: 'Roboto Mono'; src: url("/assets/fonts/Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf") format("truetype"); font-style: italic; }
 
-.post p, .post h1, .post h2, .post h3 { margin: 16px 1rem 16px 1rem; font-family: 'Roboto Mono', monospace; color: #33322f; }
+@font-face { font-family: 'Benne'; src: url("/assets/fonts/Benne/Benne-Regular.ttf") format("truetype"); font-style: normal; }
 
-.post h1, .post h2, .post h3 { margin: 50px 1rem 0px 1rem; font-family: 'Baloo Tammudu 2', cursive; }
+@font-face { font-family: 'Baloo Tammudu 2'; src: url("/assets/fonts/Baloo_Tammudu_2/BalooTammudu2-Bold.ttf") format("truetype"); font-weight: bold; font-style: normal; }
+
+@font-face { font-family: 'Baloo Tammudu 2'; src: url("/assets/fonts/Baloo_Tammudu_2/BalooTammudu2-ExtraBold.ttf") format("truetype"); font-weight: bolder; font-style: normal; }
+
+@font-face { font-family: 'Baloo Tammudu 2'; src: url("/assets/fonts/Baloo_Tammudu_2/BalooTammudu2-Medium.ttf") format("truetype"); font-weight: medium; font-style: normal; }
+
+@font-face { font-family: 'Baloo Tammudu 2'; src: url("/assets/fonts/Baloo_Tammudu_2/BalooTammudu2-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+body { margin: 0; margin: auto; max-width: 1000px; background-color: white; scroll-behavior: smooth; }
+
+#container { position: relative; }
+
+.post p, .post h1, .post h2, .post h3 { margin: 16px 1rem 16px 1rem; font-family: 'Roboto Mono'; color: #33322f; }
+
+.post h1, .post h2, .post h3 { margin: 50px 1rem 0px 1rem; font-family: 'Baloo Tammudu 2'; }
 
 .post p { font-size: 18px; }
 
@@ -58,7 +72,7 @@ nav { padding: 16px 20px 16px 20px; border-bottom: 3px #f1f1f1 solid; margin-bot
 
 nav h1 { display: inline; font-size: 32px; margin: 0 !important; color: #33322f; }
 
-#listedLinks { background-color: white; padding: 0; margin: 16px 0 0 auto; width: 200px; }
+#listedLinks { padding: 0; margin: 16px 0 0 auto; width: 200px; }
 
 #navContainer { position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); right: 0; }
 
@@ -82,7 +96,9 @@ footer p { display: inline; margin: 16px; color: #d3c8c8; font-weight: bold; }
 
 .menu-btn.open .menu-btn__burger::after { transform: rotate(-45deg); }
 
-.game { font-family: Arial, Helvetica, sans-serif; border: #dfdfdf solid 1px; width: 300px; margin: 8px; padding: 8px; color: black; height: 160px; border-radius: 6px; }
+.game a { font-family: Arial, Helvetica, sans-serif; border: #dfdfdf solid 1px; width: 300px; padding: 8px; color: black; height: 160px; border-radius: 6px; display: block; }
+
+.game { padding: 8px; }
 
 .game h3 { margin: 0; font-weight: normal; }
 
@@ -90,9 +106,9 @@ footer p { display: inline; margin: 16px; color: #d3c8c8; font-weight: bold; }
 
 .darkmodeButton { content: 'darkmode'; cursor: pointer; font-family: Arial, Helvetica, sans-serif; border: none; font-size: 20px; font-weight: bold; margin: 16px; text-align: center; padding: 4px; }
 
-.darkmode { background-color: #000 !important; color: #fff !important; }
+.darkmode { background-color: #000 !important; color: #eeedec !important; }
 
-.darkmode-text { color: #fff !important; }
+.darkmode-text { color: #eeedec !important; }
 
 .darkmode-nav { background-color: #181818 !important; border-bottom: #282828 3px solid; }
 
@@ -100,7 +116,7 @@ footer p { display: inline; margin: 16px; color: #d3c8c8; font-weight: bold; }
 
 .darkmode-button { border: none !important; color: #fff !important; background-color: #282828 !important; }
 
-.darkmode-darkmodeButton { content: 'lightmode' !important; background-color: #fff !important; color: #181818 !important; }
+.darkmode-darkmodeButton { content: 'lightmode' !important; background-color: #eeedec !important; color: #181818 !important; }
 
 .darkmode-post { border: #282828 1px solid !important; background-color: #181818 !important; }
 
@@ -108,6 +124,6 @@ footer p { display: inline; margin: 16px; color: #d3c8c8; font-weight: bold; }
 
 .darkmode-footer { border: #282828 16px solid !important; background-color: #181818 !important; border-right: none !important; border-left: none !important; }
 
-.darkmode-paragraph { color: #fff !important; font-weight: 300 !important; }
+.darkmode-paragraph { color: #eeedec !important; font-weight: 300 !important; }
 
 /*# sourceMappingURL=styles.css.map */

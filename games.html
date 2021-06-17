@@ -6,9 +6,11 @@ title: games
 <div id="games">
     <div class="carousel">
         {% for game in site.games %}
-            <a href="{{ game.url }}" class="game">
-                <h3>{{ game.name }}</h3>
-            </a>
+            <div class="game">
+                <a href="{{ game.url }}">
+                    <h3>{{ game.name }}</h3>
+                </a>
+            </div>
         {% endfor %}
     </div>
     <button class="Carousel-Button Carousel-Button-Left">&#10094;</button>
