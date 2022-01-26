@@ -1,174 +1,122 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>3-D Druck</title>
 
-    <meta name="color-scheme" content="dark light">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  
-  <body id="body">
-    <div id="container">
-      <nav id="nav">
-<div style="position: relative;">
-  
-  <h1 id="navHeadline">rakennus</h1>
+<head>
+  <meta charset="utf-8">
+  <title>3-D Druck</title>
 
-  <div id="navContainer">
-    <div id="inlineLinks" style="display: inline;">
-      <button id="darkmodeButton" class="darkmodeButton" onclick="darkModeFunction()">darkmode</button>
+  <meta name="color-scheme" content="dark light">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
-<a href="/" class="menu-link">posts</a>
+  <link rel="stylesheet" href="/assets/highlightjs/styles/monokai-sublime.min.css">
+  <script src="/assets/highlightjs/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
 
-<a href="/games.html" class="menu-link">games</a>
-
-
-<script>
-    var p = document.getElementsByTagName('p')
-    var h1 = document.getElementsByTagName('h1')
-    var h2 = document.getElementsByTagName('h2')
-    var h3 = document.getElementsByTagName('h3')
-    var h4 = document.getElementsByTagName('h4')
-
-    var a = document.getElementsByTagName('a')
-    var ReadMore = document.getElementsByClassName('ReadMore')
-
-    var posts = document.getElementsByClassName('post')
-    
-    function darkModeFunction() {
-        document.getElementById('body').classList.toggle('darkmode')
-        document.getElementById('nav').classList.toggle('darkmode-nav')
-        document.getElementById('darkmodeButton').classList.toggle('darkmode-darkmodeButton')
-        document.getElementById('posts').classList.toggle('darkmode-posts')
-        document.getElementById('footer').classList.toggle('darkmode-footer')
-
-        for(i = 0; i < p.length; i++) {
-            p[i].classList.toggle('darkmode-paragraph')
-        }
-        for(i = 0; i < h1.length; i++) {
-            h1[i].classList.toggle('darkmode-text')
-        }
-        for(i = 0; i < h2.length; i++) {
-            h2[i].classList.toggle('darkmode-text')
-        }
-        for(i = 0; i < h3.length; i++) {
-            h3[i].classList.toggle('darkmode-text')
-        }
-        for(i = 0; i < h4.length; i++) {
-            h4[i].classList.toggle('darkmode-text')
-        }
-
-        for(i = 0; i < a.length; i++) {
-            a[i].classList.toggle('darkmode-button')
-        }
-        for(i = 0; i < ReadMore.length; i++) {
-            ReadMore[i].classList.toggle('darkmode-ReadMore')
-        }
-
-        for(i = 0; i < posts.length; i++) {
-            posts[i].classList.toggle('darkmode-post')
-        }
-    }
-
-</script> 
+<body id="body">
+  <nav id="nav">
+  <div id="menu-btn-container">
+    <div id="menu-btn" class="menu-btn">
+      <div class="menu-btn__burger"></div>
     </div>
+  </div>
 
-    <div id="menu-btn" class="menu-btn"><div class="menu-btn__burger"></div></div>
-  </div> 
+  <a href="/index.html" id="navHeadline">rakennus's blog</a>
 
-</div>
-
-<div id="dropdown" style="display: none;">
-  <ul id="listedLinks" style="list-style: none;">
-    <button id="darkmodeButton" class="darkmodeButton" onclick="darkModeFunction()">darkmode</button>
-
-
-<a href="/" class="menu-link">posts</a>
-
-<a href="/games.html" class="menu-link">games</a>
-
-
-<script>
-    var p = document.getElementsByTagName('p')
-    var h1 = document.getElementsByTagName('h1')
-    var h2 = document.getElementsByTagName('h2')
-    var h3 = document.getElementsByTagName('h3')
-    var h4 = document.getElementsByTagName('h4')
-
-    var a = document.getElementsByTagName('a')
-    var ReadMore = document.getElementsByClassName('ReadMore')
-
-    var posts = document.getElementsByClassName('post')
-    
-    function darkModeFunction() {
-        document.getElementById('body').classList.toggle('darkmode')
-        document.getElementById('nav').classList.toggle('darkmode-nav')
-        document.getElementById('darkmodeButton').classList.toggle('darkmode-darkmodeButton')
-        document.getElementById('posts').classList.toggle('darkmode-posts')
-        document.getElementById('footer').classList.toggle('darkmode-footer')
-
-        for(i = 0; i < p.length; i++) {
-            p[i].classList.toggle('darkmode-paragraph')
-        }
-        for(i = 0; i < h1.length; i++) {
-            h1[i].classList.toggle('darkmode-text')
-        }
-        for(i = 0; i < h2.length; i++) {
-            h2[i].classList.toggle('darkmode-text')
-        }
-        for(i = 0; i < h3.length; i++) {
-            h3[i].classList.toggle('darkmode-text')
-        }
-        for(i = 0; i < h4.length; i++) {
-            h4[i].classList.toggle('darkmode-text')
-        }
-
-        for(i = 0; i < a.length; i++) {
-            a[i].classList.toggle('darkmode-button')
-        }
-        for(i = 0; i < ReadMore.length; i++) {
-            ReadMore[i].classList.toggle('darkmode-ReadMore')
-        }
-
-        for(i = 0; i < posts.length; i++) {
-            posts[i].classList.toggle('darkmode-post')
-        }
-    }
-
-</script> 
-  </ul>
-</div>
-
+  <input style="display: none;" type="checkbox" id="theme-checkbox" />
+  <label class="theme-switch switch" for="theme-checkbox"></label>
 </nav>
+
+<menu id="menu">
+  <div id="links">
+    <ul>
+      
+      <li><a href="/" >posts</a></li>
+      
+    </ul>
+  </div>
+
+  <div id="close-button-container">
+    <span id="menu-close-button"></span>
+  </div>
+</menu>
 
 <script>
   const menuBtn = document.querySelector('.menu-btn')
-  const dropdown = document.getElementById('dropdown')
-  let menuOpen = false
+  const menu = document.getElementById("menu");
+  const menuLinks = document.getElementById("links")
 
   menuBtn.addEventListener('click', () => {
-    if(!menuOpen) {
-      menuBtn.classList.add('open')
-      menuOpen = true
-      document.getElementById("dropdown").style.display = "block"
-    } else {
-      menuBtn.classList.remove('open')
-
-      menuOpen = false
-      document.getElementById("dropdown").style.display = "none"
-    }
+    toggleMenu();
   });
-</script>
-      <div class="post">
-    <div class="postHead">
-    <p style="display: inline;">3-D Druck</p><p style="display: inline; margin-left: 2rem;">20-01-2021</p>
-    </div> 
 
-    <div class="postContant"><h2 id="was-ist-3-d-druck">Was ist 3-D Druck?</h2>
+  function toggleMenu() {
+    menuBtn.classList.toggle('open');
+    menu.classList.toggle('open');
+    menuLinks.classList.toggle('open');
+  }
+
+  // Get the theme toggle input
+  const themeToggle = document.getElementById("theme-checkbox");
+
+  // Get the current theme from local storage
+  const currentTheme = localStorage.getItem("theme");// If the current local storage item can be found
+  if (currentTheme) {
+    // Set the body data-theme attribute to match the local storage item
+    document.documentElement.setAttribute("data-theme", currentTheme);// If the current theme is dark, check the theme toggle
+    if (currentTheme === "dark") {
+      themeToggle.checked = true;
+    }
+  }
+  // Function that will switch the theme based on the if the theme toggle is checked or not
+  function switchTheme(e) {
+    if (e.target.checked) {
+      document.documentElement.setAttribute("data-theme", "dark");
+
+      // Set the user's theme preference to dark
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+
+      // Set the user's theme preference to light
+      localStorage.setItem("theme", "light");
+    }
+  }
+  // Add an event listener to the theme toggle, which will switch the theme
+  themeToggle.addEventListener("change", switchTheme, false);
+
+  const menuCloseButton = document.getElementById("menu-close-button");
+  menuCloseButton.addEventListener("click", () => {
+    toggleMenu();
+  })
+
+</script>
+  <style>
+    body {
+        background-color: var(--second-background-color);
+    }
+</style>
+
+<div class="post">
+    <div class="post-head">
+        <h1>3-D Druck</h1>
+        <div class="info">
+            <p>20-01-2021</p>
+            <p>
+                
+
+                
+
+                
+                    6 minutes to read
+                
+            </p>
+        </div>
+    </div>
+
+    <h2 id="was-ist-3-d-druck">Was ist 3-D Druck?</h2>
 
 <p>Beim 3-D-Druck handelt es sich um ein Fertigungsverfahren bei dem Material gezielt Schicht für Schicht über einander aufgetragen wird und so ein dreidimensionaler Körper entsteht.
 Er unterscheidet sich von Fertigungsverfahren wie Sägen, Fräsen und Schneiden, bei denen Material von einem Objekt entfernt und nicht hinzugefügt wird. Der 3-D Druck hat zum Vorteil, dass keine Späne oder sonstiger Abfälle entstehen, welche entsorgt, kompostiert oder eingeschmolzen werden müssen. Beispielsweise wird beim Fräsen von Metall etwa 50 % bis 60 % des Materials in Form von Spänen entfernt.</p>
@@ -247,17 +195,12 @@ Industrietauglich</p>
 Material ist sehr teuer
 Objekte haben eine raue Oberfläche
 Die Bedienung ist eine Wissenschaft für sich</p>
-</div>
-</div>
 
-      <footer id="footer">
-    <p>&copy; Copyright 2021, Aleksi Braun</p>
-    <p>contact:</p> <p>aleksibraun@outlook.de</p>
-</footer>
-    </div>
-  </body>
+</div>
+  
+</body>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </html>

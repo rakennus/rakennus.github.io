@@ -1,61 +1,32 @@
-// color variables
+:root {
+    --font-color: #33322f;
+    --less-important-font-color: #727272;
+    --contrast-font-color: #f0f0f0;
+    --highlight-color: #306fce;
+    --border-color: #c7c7c7;
+    --second-border-color: #c7c7c7;
+    --background-color: white;
+    --second-background-color: #ffffff;
+    --background-color-contrast: white;
+    --dark-border-color: #282828;
+    --slightly-transparent: #00000065;
+}
 
-$border-color: #a5a5a5;
-$light-border-color: #dfdfdf;
-$lightgray-background: #f1f1f1;
-$lightblue-background: rgb(238, 245, 252);
-$blue-highlight-color: rgb(48, 111, 206);
-$blue-background-color: rgb(238, 245, 255);
-$contrast: #25292e;
-$text-color: #33322f;
-
-//darkmode
-
-$not-quite-black: #181818;
-$not-even-quite-black: #282828;
-$not-quite-white: rgb(238, 237, 236);
+[data-theme="dark"] {
+    --font-color: #ebebeb;
+    --less-important-font-color: #969696;
+    --border-color: #282828;
+    --second-border-color: #7a7a7a;
+    --background-color: #000000;
+    --second-background-color: #282c35;
+    --background-color-contrast: rgb(20, 20, 20);
+    --slightly-transparent: #ffffff65;
+}
 
 body {
     margin: 0;
     margin: auto;
-    max-width: 1000px;
-    background-color: white;
+    max-width: 800px;
+    background-color: var(--background-color);
     scroll-behavior: smooth;
-}
-
-#container {
-    position: relative;
-}
-
-.post p, .post h1, .post h2, .post h3 {
-    margin: 16px 1rem 16px 1rem;
-    font-family: 'Roboto Mono';
-    color: $text-color;
-}
-.post h1, .post h2, .post h3 {
-    margin: 50px 1rem 0px 1rem;
-    font-family: 'Baloo Tammudu 2';
-}
-
-.post p {
-    font-size: 18px;
-}
-
-.carousel {
-    overflow-x: scroll;
-    grid-auto-flow: column;
-    display: grid;
-}
-
-.Carousel-Button {
-    position: absolute;
-    height: 100%;
-    width: 50px;
-    top: 0;
-}
-.Carousel-Button-Left {
-    left: 0;
-}
-.Carousel-Button-Right {
-    right: 0;
 }

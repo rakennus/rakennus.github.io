@@ -2,10 +2,32 @@
 layout: default
 ---
 
-<div class="post">
-    <div class="postHead">
-    <p style="display: inline;">{{ page.title }}</p><p style="display: inline; margin-left: 2rem;">{{ page.date | date: "%d-%m-%Y" }}</p>
-    </div> 
+<style>
+    body {
+        background-color: var(--second-background-color);
+    }
+</style>
 
-    <div class="postContant">{{ content }}</div>
+<div class="post">
+    <div class="post-head">
+        <h1>{{ page.title }}</h1>
+        <div class="info">
+            <p>{{ page.date | date: "%d-%m-%Y" }}</p>
+            <p>
+                {% capture words %}
+                    {{ content | number_of_words | minus: 180 }}
+                {% endcapture %}
+
+                {% assign minutes = words | plus: 150 | divided_by: 150 %}
+
+                {% if minutes <= 1 %}
+                    {{ 'Less than a minute to read' }}
+                {% else %}
+                    {{ words | plus: 150 | divided_by: 150 | append: ' minutes to read' }}
+                {% endif %}
+            </p>
+        </div>
+    </div>
+
+    {{ content }}
 </div>

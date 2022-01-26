@@ -1,179 +1,150 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Rakennus</title>
 
-    <meta name="color-scheme" content="dark light">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  
-  <body id="body">
-    <div id="container">
-      <nav id="nav">
-<div style="position: relative;">
-  
-  <h1 id="navHeadline">rakennus</h1>
+<head>
+  <meta charset="utf-8">
+  <title>Rakennus</title>
 
-  <div id="navContainer">
-    <div id="inlineLinks" style="display: inline;">
-      <button id="darkmodeButton" class="darkmodeButton" onclick="darkModeFunction()">darkmode</button>
+  <meta name="color-scheme" content="dark light">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
-<a href="/" class="menu-linkcurrentPage">posts</a>
+  <link rel="stylesheet" href="/assets/highlightjs/styles/monokai-sublime.min.css">
+  <script src="/assets/highlightjs/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
 
-<a href="/games.html" class="menu-link">games</a>
-
-
-<script>
-    var p = document.getElementsByTagName('p')
-    var h1 = document.getElementsByTagName('h1')
-    var h2 = document.getElementsByTagName('h2')
-    var h3 = document.getElementsByTagName('h3')
-    var h4 = document.getElementsByTagName('h4')
-
-    var a = document.getElementsByTagName('a')
-    var ReadMore = document.getElementsByClassName('ReadMore')
-
-    var posts = document.getElementsByClassName('post')
-    
-    function darkModeFunction() {
-        document.getElementById('body').classList.toggle('darkmode')
-        document.getElementById('nav').classList.toggle('darkmode-nav')
-        document.getElementById('darkmodeButton').classList.toggle('darkmode-darkmodeButton')
-        document.getElementById('posts').classList.toggle('darkmode-posts')
-        document.getElementById('footer').classList.toggle('darkmode-footer')
-
-        for(i = 0; i < p.length; i++) {
-            p[i].classList.toggle('darkmode-paragraph')
-        }
-        for(i = 0; i < h1.length; i++) {
-            h1[i].classList.toggle('darkmode-text')
-        }
-        for(i = 0; i < h2.length; i++) {
-            h2[i].classList.toggle('darkmode-text')
-        }
-        for(i = 0; i < h3.length; i++) {
-            h3[i].classList.toggle('darkmode-text')
-        }
-        for(i = 0; i < h4.length; i++) {
-            h4[i].classList.toggle('darkmode-text')
-        }
-
-        for(i = 0; i < a.length; i++) {
-            a[i].classList.toggle('darkmode-button')
-        }
-        for(i = 0; i < ReadMore.length; i++) {
-            ReadMore[i].classList.toggle('darkmode-ReadMore')
-        }
-
-        for(i = 0; i < posts.length; i++) {
-            posts[i].classList.toggle('darkmode-post')
-        }
-    }
-
-</script> 
+<body id="body">
+  <nav id="nav">
+  <div id="menu-btn-container">
+    <div id="menu-btn" class="menu-btn">
+      <div class="menu-btn__burger"></div>
     </div>
+  </div>
 
-    <div id="menu-btn" class="menu-btn"><div class="menu-btn__burger"></div></div>
-  </div> 
+  <a href="/index.html" id="navHeadline">rakennus's blog</a>
 
-</div>
-
-<div id="dropdown" style="display: none;">
-  <ul id="listedLinks" style="list-style: none;">
-    <button id="darkmodeButton" class="darkmodeButton" onclick="darkModeFunction()">darkmode</button>
-
-
-<a href="/" class="menu-linkcurrentPage">posts</a>
-
-<a href="/games.html" class="menu-link">games</a>
-
-
-<script>
-    var p = document.getElementsByTagName('p')
-    var h1 = document.getElementsByTagName('h1')
-    var h2 = document.getElementsByTagName('h2')
-    var h3 = document.getElementsByTagName('h3')
-    var h4 = document.getElementsByTagName('h4')
-
-    var a = document.getElementsByTagName('a')
-    var ReadMore = document.getElementsByClassName('ReadMore')
-
-    var posts = document.getElementsByClassName('post')
-    
-    function darkModeFunction() {
-        document.getElementById('body').classList.toggle('darkmode')
-        document.getElementById('nav').classList.toggle('darkmode-nav')
-        document.getElementById('darkmodeButton').classList.toggle('darkmode-darkmodeButton')
-        document.getElementById('posts').classList.toggle('darkmode-posts')
-        document.getElementById('footer').classList.toggle('darkmode-footer')
-
-        for(i = 0; i < p.length; i++) {
-            p[i].classList.toggle('darkmode-paragraph')
-        }
-        for(i = 0; i < h1.length; i++) {
-            h1[i].classList.toggle('darkmode-text')
-        }
-        for(i = 0; i < h2.length; i++) {
-            h2[i].classList.toggle('darkmode-text')
-        }
-        for(i = 0; i < h3.length; i++) {
-            h3[i].classList.toggle('darkmode-text')
-        }
-        for(i = 0; i < h4.length; i++) {
-            h4[i].classList.toggle('darkmode-text')
-        }
-
-        for(i = 0; i < a.length; i++) {
-            a[i].classList.toggle('darkmode-button')
-        }
-        for(i = 0; i < ReadMore.length; i++) {
-            ReadMore[i].classList.toggle('darkmode-ReadMore')
-        }
-
-        for(i = 0; i < posts.length; i++) {
-            posts[i].classList.toggle('darkmode-post')
-        }
-    }
-
-</script> 
-  </ul>
-</div>
-
+  <input style="display: none;" type="checkbox" id="theme-checkbox" />
+  <label class="theme-switch switch" for="theme-checkbox"></label>
 </nav>
+
+<menu id="menu">
+  <div id="links">
+    <ul>
+      
+      <li><a href="/" style="text-decoration: underline;" >posts</a></li>
+      
+    </ul>
+  </div>
+
+  <div id="close-button-container">
+    <span id="menu-close-button"></span>
+  </div>
+</menu>
 
 <script>
   const menuBtn = document.querySelector('.menu-btn')
-  const dropdown = document.getElementById('dropdown')
-  let menuOpen = false
+  const menu = document.getElementById("menu");
+  const menuLinks = document.getElementById("links")
 
   menuBtn.addEventListener('click', () => {
-    if(!menuOpen) {
-      menuBtn.classList.add('open')
-      menuOpen = true
-      document.getElementById("dropdown").style.display = "block"
-    } else {
-      menuBtn.classList.remove('open')
-
-      menuOpen = false
-      document.getElementById("dropdown").style.display = "none"
-    }
+    toggleMenu();
   });
+
+  function toggleMenu() {
+    menuBtn.classList.toggle('open');
+    menu.classList.toggle('open');
+    menuLinks.classList.toggle('open');
+  }
+
+  // Get the theme toggle input
+  const themeToggle = document.getElementById("theme-checkbox");
+
+  // Get the current theme from local storage
+  const currentTheme = localStorage.getItem("theme");// If the current local storage item can be found
+  if (currentTheme) {
+    // Set the body data-theme attribute to match the local storage item
+    document.documentElement.setAttribute("data-theme", currentTheme);// If the current theme is dark, check the theme toggle
+    if (currentTheme === "dark") {
+      themeToggle.checked = true;
+    }
+  }
+  // Function that will switch the theme based on the if the theme toggle is checked or not
+  function switchTheme(e) {
+    if (e.target.checked) {
+      document.documentElement.setAttribute("data-theme", "dark");
+
+      // Set the user's theme preference to dark
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+
+      // Set the user's theme preference to light
+      localStorage.setItem("theme", "light");
+    }
+  }
+  // Add an event listener to the theme toggle, which will switch the theme
+  themeToggle.addEventListener("change", switchTheme, false);
+
+  const menuCloseButton = document.getElementById("menu-close-button");
+  menuCloseButton.addEventListener("click", () => {
+    toggleMenu();
+  })
+
 </script>
-      <div id="posts">
-    
-    <div class="post">
-        <div class="postHead">
-        <p style="display: inline;"><a href="/2021/04/06/pqFormel.html">Lösen quadratischer Gleichungen mit der pq Formel</a></p><p style="display: inline; margin-left: 2rem;">06-04-2021</p>
-        </div> 
+  <div class="introduction">
+  <div class="profile">
+    <span></span>
+  </div>
+  <div class="text">
+    <h1>Aleksi Braun</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+      dolore
+      magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+      gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+      sadipscing
+      elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+      eos et
+      accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+      sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+      dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+      kasd
+      gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+      Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+      feugiat
+      nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
+      duis
+      dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+    </p>
+  </div>
+</div>
+
+
+<div class="post bubble">
+  <div class="post-head">
+    <div class="headline"><a href="/2021/04/06/pqFormel.html">Lösen quadratischer Gleichungen mit der pq Formel</a></div>
+    <div class="info">
+      <p>06-04-2021</p>
+      <p>
+        
 
         
+
         
-            <div class="postContant" id="Lösen quadratischer Gleichungen mit der pq Formelpreview"><h2 id="was-ist-die-pq-formel">Was ist die pq Formel?</h2> <p>Die pq-Formel ist eine Formel zum berechnen der Nullstelle von gemischt quadratischen Gleichung. Das heißt einfach formuliert, dass man mit ihr den Punkt oder die Punkte berechnet, an denen eine Parabel in einem Koordinatensystem...</div>
-            <div class="postContant" style="display: none;" id="Lösen quadratischer Gleichungen mit der pq Formelcontent"><h2 id="was-ist-die-pq-formel">Was ist die pq Formel?</h2>
+          5 minutes to read
+        
+      </p>
+    </div>
+  </div>
+
+  
+  
+  <div class="postContant" id="Lösen quadratischer Gleichungen mit der pq Formelpreview"><h2 id="was-ist-die-pq-formel">Was ist die pq Formel?</h2> <p>Die pq-Formel ist eine Formel zum berechnen der Nullstelle von gemischt quadratischen Gleichung. Das heißt einfach formuliert, dass man mit ihr den Punkt oder die Punkte berechnet, an denen eine Parabel in einem Koordinatensystem...</div>
+  <div class="postContant" style="display: none;" id="Lösen quadratischer Gleichungen mit der pq Formelcontent"><h2 id="was-ist-die-pq-formel">Was ist die pq Formel?</h2>
 
 <p>Die pq-Formel ist eine Formel zum berechnen der Nullstelle von gemischt quadratischen Gleichung. Das heißt einfach formuliert, dass man mit ihr den Punkt oder die Punkte berechnet, an denen eine Parabel in einem Koordinatensystem die x-Achse schneidet. Jedoch muss eine Parabel in einem Koordinatensystem die x-Achse nicht zwingend schneiden. In diesem Fall gibt die Formel keine reelle Lösung. Jedoch gehe ich im Folgenden genauer darauf ein.
 Die pq-Formel lautet:</p>
@@ -256,27 +227,53 @@ wenn man die Gleichung jedoch durch die Zahl vor dem x teilt, ist die pq-Formel 
 
 <p>Die pq-Formel eignet sich besonders für Computerprogrammen, in denen quadratischen Gleichung gelöst werden müssen. Sie lässt sich nämlich in die meisten Computersprachen übersetzen. Als Beispiel habe ich einmal so einfach wie möglich die pq-Formel in die Web-Programmiersprache Javascript übersetzt:</p>
 
-<script src="https://gist.github.com/rakennus/0c2d5395ca1caaaf0993290271c02864.js"></script>
+<pre><code class="language-javascript">
+function pqFormel(p, q){
+  return this.result = {
+    x1: -p / 2 + Math.sqrt(Math.pow(p / 2, 2) - q),
+    x2: -p / 2 - Math.sqrt(Math.pow(p / 2, 2) - q)
+  }
+}
+</code></pre>
 
 <p>Der Code beinhaltet eine Funktion namens pqFormel mit den Parametern p und q. Wenn man die Funktion mit zwei Zahlen als Parametern ausführt, nämlich die, die anstelle von p und q in einer gemischt quadratischen Gleichung stehen, bekommt man ein Objekt zurück. Das Objekt heißt result und beinhaltet zwei Variablen namens x1 und x2. Sie sind das Ergebnis der gemischt quadratischen Gleichung, die man als Quelle für die Parameter p und q verwendet hat.</p>
 
 <p>Ich habe zu dieser Javascript Funktion eine grafische Schnittstelle programmiert, mit der man nur noch eine abgebildete quadratischen Gleichung um die Werte p und q vervollständigen muss und auf Knopfdruck das Ergebnis der Gleichung bekommt.</p>
 
-<div class="programBox">
-<div id="pqFormelRechner">
+<style>
+  .mathInput {
+    width: 32px;
+    background-color: none !important;
+  }
+  #pqFormel input,
+  #pqFormel p {
+    display: inline;
+  }
+
+  .program-box-container {
+    padding: 6px;
+    margin: 16px 0 16px 0;
+    background-color: var(--second-background-color);
+  }
+  .program-box {
+    margin: auto;
+    width: fit-content;
+  }
+</style>
+
+<div class="program-box-container">
+  <div class="program-box">
     <div style="margin-bottom: 16px;" id="pqFormel">
         <p>x² + </p>
-        <input class="mathInput" id="p" type="text" placeholder="p" />
+        <input class="mathInput" id="p" type="number" placeholder="p" />
         <p>x + </p>
-        <input class="mathInput" id="q" type="text" placeholder="q" />
+        <input class="mathInput" id="q" type="number" placeholder="q" />
         <p> = 0</p>
     </div>
     <button onclick="rechnung()">Gleichung lösen</button>
-    <div style="margin-top: 16px;" id="mathResult">
-        <div><p style="display: inline;">x1: </p><p style="display: inline;" id="x1"></p></div>
-        <div><p style="display: inline;">x2: </p><p style="display: inline;" id="x2"></p></div>
-    </div>
-</div>
+    <div style="display: inline;"><p style="display: inline;">x1: </p><p style="display: inline;" id="x1"></p></div>
+    <div style="display: inline;"><p style="display: inline;">x2: </p><p style="display: inline;" id="x2"></p></div>
+  </div>
 </div>
 
 <script>
@@ -294,20 +291,34 @@ function rechnung() {
 </script>
 
 </div>
-            <input type="checkbox" id="Lösen quadratischer Gleichungen mit der pq Formel" style="display: none;" onclick="readMoreFunction(this.id)">
-            <label for="Lösen quadratischer Gleichungen mit der pq Formel"><p class="ReadMore" id="Lösen quadratischer Gleichungen mit der pq FormelcheckboxParagraph">read more</p></label>
+  <input type="checkbox" id="Lösen quadratischer Gleichungen mit der pq Formel" style="display: none;" onclick="readMoreFunction(this.id)">
+  <label for="Lösen quadratischer Gleichungen mit der pq Formel">
+    <p class="read-more" id="Lösen quadratischer Gleichungen mit der pq FormelcheckboxParagraph">read more</p>
+  </label>
+  
+</div>
+
+<div class="post bubble">
+  <div class="post-head">
+    <div class="headline"><a href="/2021/01/20/3DPrinting.html">3-D Druck</a></div>
+    <div class="info">
+      <p>20-01-2021</p>
+      <p>
         
-    </div>
-    
-    <div class="post">
-        <div class="postHead">
-        <p style="display: inline;"><a href="/2021/01/20/3DPrinting.html">3-D Druck</a></p><p style="display: inline; margin-left: 2rem;">20-01-2021</p>
-        </div> 
 
         
+
         
-            <div class="postContant" id="3-D Druckpreview"><h2 id="was-ist-3-d-druck">Was ist 3-D Druck?</h2> <p>Beim 3-D-Druck handelt es sich um ein Fertigungsverfahren bei dem Material gezielt Schicht für Schicht über einander aufgetragen wird und so ein dreidimensionaler Körper entsteht. Er unterscheidet sich von Fertigungsverfahren wie Sägen, Fräsen und Schneiden,...</div>
-            <div class="postContant" style="display: none;" id="3-D Druckcontent"><h2 id="was-ist-3-d-druck">Was ist 3-D Druck?</h2>
+          6 minutes to read
+        
+      </p>
+    </div>
+  </div>
+
+  
+  
+  <div class="postContant" id="3-D Druckpreview"><h2 id="was-ist-3-d-druck">Was ist 3-D Druck?</h2> <p>Beim 3-D-Druck handelt es sich um ein Fertigungsverfahren bei dem Material gezielt Schicht für Schicht über einander aufgetragen wird und so ein dreidimensionaler Körper entsteht. Er unterscheidet sich von Fertigungsverfahren wie Sägen, Fräsen und Schneiden,...</div>
+  <div class="postContant" style="display: none;" id="3-D Druckcontent"><h2 id="was-ist-3-d-druck">Was ist 3-D Druck?</h2>
 
 <p>Beim 3-D-Druck handelt es sich um ein Fertigungsverfahren bei dem Material gezielt Schicht für Schicht über einander aufgetragen wird und so ein dreidimensionaler Körper entsteht.
 Er unterscheidet sich von Fertigungsverfahren wie Sägen, Fräsen und Schneiden, bei denen Material von einem Objekt entfernt und nicht hinzugefügt wird. Der 3-D Druck hat zum Vorteil, dass keine Späne oder sonstiger Abfälle entstehen, welche entsorgt, kompostiert oder eingeschmolzen werden müssen. Beispielsweise wird beim Fräsen von Metall etwa 50 % bis 60 % des Materials in Form von Spänen entfernt.</p>
@@ -387,43 +398,36 @@ Material ist sehr teuer
 Objekte haben eine raue Oberfläche
 Die Bedienung ist eine Wissenschaft für sich</p>
 </div>
-            <input type="checkbox" id="3-D Druck" style="display: none;" onclick="readMoreFunction(this.id)">
-            <label for="3-D Druck"><p class="ReadMore" id="3-D DruckcheckboxParagraph">read more</p></label>
-        
-    </div>
-    
+  <input type="checkbox" id="3-D Druck" style="display: none;" onclick="readMoreFunction(this.id)">
+  <label for="3-D Druck">
+    <p class="read-more" id="3-D DruckcheckboxParagraph">read more</p>
+  </label>
+  
 </div>
 
+
 <script>
+  function readMoreFunction(checkboxId) {
+    var checkBox = document.getElementById(checkboxId);
+    var content = document.getElementById(checkboxId + "content");
+    var preview = document.getElementById(checkboxId + "preview");
+    var checkboxParagraph = document.getElementById(checkboxId + "checkboxParagraph");
 
-function readMoreFunction(checkboxId) {
-  var checkBox = document.getElementById(checkboxId);
-  var content = document.getElementById(checkboxId + "content");
-  var preview = document.getElementById(checkboxId + "preview");
-  var checkboxParagraph = document.getElementById(checkboxId + "checkboxParagraph");
-
-
-  if (checkBox.checked == true){
-    content.style.display = "block";
-    preview.style.display = "none";
-    checkboxParagraph.innerHTML = "read less";
-  } else {
-    content.style.display = "none";
-    preview.style.display = "block";
-    checkboxParagraph.innerHTML = "read more";
+    if (checkBox.checked == true) {
+      content.style.display = "block";
+      preview.style.display = "none";
+      checkboxParagraph.innerHTML = "read less";
+    } else {
+      content.style.display = "none";
+      preview.style.display = "block";
+      checkboxParagraph.innerHTML = "read more";
+    }
   }
-}
-
 </script>
+  
+</body>
 
-      <footer id="footer">
-    <p>&copy; Copyright 2021, Aleksi Braun</p>
-    <p>contact:</p> <p>aleksibraun@outlook.de</p>
-</footer>
-    </div>
-  </body>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </html>

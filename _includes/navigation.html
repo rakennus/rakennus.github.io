@@ -1,41 +1,78 @@
 <nav id="nav">
-<div style="position: relative;">
-  
-  <h1 id="navHeadline">rakennus</h1>
-
-  <div id="navContainer">
-    <div id="inlineLinks" style="display: inline;">
-      {% include navButtons.html %}
+  <div id="menu-btn-container">
+    <div id="menu-btn" class="menu-btn">
+      <div class="menu-btn__burger"></div>
     </div>
+  </div>
 
-    <div id="menu-btn" class="menu-btn"><div class="menu-btn__burger"></div></div>
-  </div> 
+  <a href="/index.html" id="navHeadline">rakennus's blog</a>
 
-</div>
-
-<div id="dropdown" style="display: none;">
-  <ul id="listedLinks" style="list-style: none;">
-    {% include navButtons.html %}
-  </ul>
-</div>
-
+  <input style="display: none;" type="checkbox" id="theme-checkbox" />
+  <label class="theme-switch switch" for="theme-checkbox"></label>
 </nav>
+
+<menu id="menu">
+  <div id="links">
+    <ul>
+      {% for item in site.data.navigation %}
+      <li><a href="{{ item.link }}" {% if page.url==item.link %}style="text-decoration: underline;" {% endif %}>{{
+          item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div id="close-button-container">
+    <span id="menu-close-button"></span>
+  </div>
+</menu>
 
 <script>
   const menuBtn = document.querySelector('.menu-btn')
-  const dropdown = document.getElementById('dropdown')
-  let menuOpen = false
+  const menu = document.getElementById("menu");
+  const menuLinks = document.getElementById("links")
 
   menuBtn.addEventListener('click', () => {
-    if(!menuOpen) {
-      menuBtn.classList.add('open')
-      menuOpen = true
-      document.getElementById("dropdown").style.display = "block"
-    } else {
-      menuBtn.classList.remove('open')
-
-      menuOpen = false
-      document.getElementById("dropdown").style.display = "none"
-    }
+    toggleMenu();
   });
+
+  function toggleMenu() {
+    menuBtn.classList.toggle('open');
+    menu.classList.toggle('open');
+    menuLinks.classList.toggle('open');
+  }
+
+  // Get the theme toggle input
+  const themeToggle = document.getElementById("theme-checkbox");
+
+  // Get the current theme from local storage
+  const currentTheme = localStorage.getItem("theme");// If the current local storage item can be found
+  if (currentTheme) {
+    // Set the body data-theme attribute to match the local storage item
+    document.documentElement.setAttribute("data-theme", currentTheme);// If the current theme is dark, check the theme toggle
+    if (currentTheme === "dark") {
+      themeToggle.checked = true;
+    }
+  }
+  // Function that will switch the theme based on the if the theme toggle is checked or not
+  function switchTheme(e) {
+    if (e.target.checked) {
+      document.documentElement.setAttribute("data-theme", "dark");
+
+      // Set the user's theme preference to dark
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+
+      // Set the user's theme preference to light
+      localStorage.setItem("theme", "light");
+    }
+  }
+  // Add an event listener to the theme toggle, which will switch the theme
+  themeToggle.addEventListener("change", switchTheme, false);
+
+  const menuCloseButton = document.getElementById("menu-close-button");
+  menuCloseButton.addEventListener("click", () => {
+    toggleMenu();
+  })
+
 </script>

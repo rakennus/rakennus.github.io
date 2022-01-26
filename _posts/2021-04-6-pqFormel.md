@@ -40,7 +40,6 @@ $$4x^2 + 16x + 32 = 0 | :4$$
 
 $$=x^2 + 4x + 8 = 0$$
 
-
 ## Beispiel:
 
 Im Folgendem wird anhand eines Beispieles vorgeführt, wie man mit der pq-Formel eine gemischt quadratischen Gleichung löst.
@@ -53,16 +52,16 @@ $$x_{1|2} = -\dfrac{4}{2} \pm \sqrt{\left(\dfrac{4}{2}\right)^2-(-10)}$$
 
 Nach dem Einsetzen von p und q in die pq-Formel kann diese ausgerechnet werden. Dies wird im Folgenden Schritt für Schritt vorgemacht und erklärt.
 
-- Die Rechnung unter der Wurzel nennt sich Radikand und wird zuerst ausgerechnet. Dazu lösen wir alle Klammern und rechnen den Bruch aus. Dabei wird aus den \\((\dfrac{4}{2})^2\\) wird eine \\(4\\). Es ist sehr auf Vorzeichen zu achten, denn in diesem Fall wird die \\(-(-10)\\) zu einer \\(10\\).
+-   Die Rechnung unter der Wurzel nennt sich Radikand und wird zuerst ausgerechnet. Dazu lösen wir alle Klammern und rechnen den Bruch aus. Dabei wird aus den \\((\dfrac{4}{2})^2\\) wird eine \\(4\\). Es ist sehr auf Vorzeichen zu achten, denn in diesem Fall wird die \\(-(-10)\\) zu einer \\(10\\).
 
 $$x_{1|2} = -\dfrac{4}{2} \pm \sqrt{4 + 10} = -\dfrac{4}{2} \pm \sqrt{14}$$
 
-- Die Lösung der Wurzel berechne ich in diesem Fall mit einem Taschenrechner, wobei ich auf zwei Nachkommastellen auf runde. Nun kann der übrig gebliebene Bruch ausgerechnet werden.
+-   Die Lösung der Wurzel berechne ich in diesem Fall mit einem Taschenrechner, wobei ich auf zwei Nachkommastellen auf runde. Nun kann der übrig gebliebene Bruch ausgerechnet werden.
 
 $$x_{1|2} = -\dfrac{4}{2} \pm 3,74 = -2 \pm 3,74$$
 
-- Bevor wir nun den Rest ausrechnen, müssen wir noch eine Sache wissen. Wenn man das erste Mal die pq-Formel sieht, wird einem aufgefallen sein, dass dort ein $$x_{1|2}$$ steht und zwischen.
-\\(-\dfrac{p}{2}\\) und der Wurzel ein Plus und ein Minus übereinander stehen.
+-   Bevor wir nun den Rest ausrechnen, müssen wir noch eine Sache wissen. Wenn man das erste Mal die pq-Formel sieht, wird einem aufgefallen sein, dass dort ein $$x_{1|2}$$ steht und zwischen.
+    \\(-\dfrac{p}{2}\\) und der Wurzel ein Plus und ein Minus übereinander stehen.
 
 Das ist eine zusammengehörende Kurzschreibweise, denn die pq-Formel besteht eigentlich aus zwei Formeln. Eine für \\(x_1\\) und eine für \\(x_2\\). Das Plus über dem Minus bedeutet, dass einmal die Wurzel zu \\(-\dfrac{p}{2}\\) subtrahiert und einmal addiert wird. Die Zwei Ergebnisse sind dann \\(x_1\\) und \\(x_2\\). Daraus folgt:
 
@@ -82,27 +81,52 @@ Das Ergebnis ist \\(x_1 = 1,74\\) und \\(x_2 = -5,74\\).
 
 Die pq-Formel eignet sich besonders für Computerprogrammen, in denen quadratischen Gleichung gelöst werden müssen. Sie lässt sich nämlich in die meisten Computersprachen übersetzen. Als Beispiel habe ich einmal so einfach wie möglich die pq-Formel in die Web-Programmiersprache Javascript übersetzt:
 
-<script src="https://gist.github.com/rakennus/0c2d5395ca1caaaf0993290271c02864.js"></script>
+<pre><code class="language-javascript">
+function pqFormel(p, q){
+  return this.result = {
+    x1: -p / 2 + Math.sqrt(Math.pow(p / 2, 2) - q),
+    x2: -p / 2 - Math.sqrt(Math.pow(p / 2, 2) - q)
+  }
+}
+</code></pre>
 
 Der Code beinhaltet eine Funktion namens pqFormel mit den Parametern p und q. Wenn man die Funktion mit zwei Zahlen als Parametern ausführt, nämlich die, die anstelle von p und q in einer gemischt quadratischen Gleichung stehen, bekommt man ein Objekt zurück. Das Objekt heißt result und beinhaltet zwei Variablen namens x1 und x2. Sie sind das Ergebnis der gemischt quadratischen Gleichung, die man als Quelle für die Parameter p und q verwendet hat.
 
 Ich habe zu dieser Javascript Funktion eine grafische Schnittstelle programmiert, mit der man nur noch eine abgebildete quadratischen Gleichung um die Werte p und q vervollständigen muss und auf Knopfdruck das Ergebnis der Gleichung bekommt.
 
-<div class="programBox">
-<div id="pqFormelRechner">
+<style>
+  .mathInput {
+    width: 32px;
+    background-color: none !important;
+  }
+  #pqFormel input,
+  #pqFormel p {
+    display: inline;
+  }
+
+  .program-box-container {
+    padding: 6px;
+    margin: 16px 0 16px 0;
+    background-color: var(--second-background-color);
+  }
+  .program-box {
+    margin: auto;
+    width: fit-content;
+  }
+</style>
+<div class="program-box-container">
+  <div class="program-box">
     <div style="margin-bottom: 16px;" id="pqFormel">
         <p>x² + </p>
-        <input class="mathInput" id="p" type="text" placeholder="p">
+        <input class="mathInput" id="p" type="number" placeholder="p">
         <p>x + </p>
-        <input class="mathInput" id="q" type="text" placeholder="q">
+        <input class="mathInput" id="q" type="number" placeholder="q">
         <p> = 0</p>
     </div>
     <button onclick="rechnung()">Gleichung lösen</button>
-    <div style="margin-top: 16px;" id="mathResult">
-        <div><p style="display: inline;">x1: </p><p  style="display: inline;" id="x1"></p></div>
-        <div><p style="display: inline;">x2: </p><p style="display: inline;" id="x2"></p></div>
-    </div>
-</div>
+    <div style="display: inline;"><p style="display: inline;">x1: </p><p  style="display: inline;" id="x1"></p></div>
+    <div style="display: inline;"><p style="display: inline;">x2: </p><p style="display: inline;" id="x2"></p></div>
+  </div>
 </div>
 
 <script>
