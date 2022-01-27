@@ -34,13 +34,24 @@ menu #links.open {
 
 menu #links ul {
     font-family: "Mulish", sans-serif;
-    list-style-type: none;
-    padding: 32px 58px;
+    list-style-image: url("/assets/icons/corner-down-right.svg");
+    padding: 8px 64px;
+    transition: 0.2s;
+}
+
+menu #links ul:hover {
+    transform: translate(6px);
 }
 
 menu ul li a {
     text-decoration: none;
     color: var(--contrast-font-color);
+    font-size: 20px;
+}
+
+menu h2 {
+    font-family: "Mulish", sans-serif;
+    margin: 32px 0 8px 32px;
     font-size: 20px;
 }
 
@@ -67,11 +78,21 @@ menu span {
     z-index: 10;
 }
 
+menu span svg {
+    transform: translate(-50%, -50%);
+    margin: 30px;
+    width: 120px;
+    color: black;
+}
+
 @media screen and (max-width: 800px) {
-    menu ul {
+    menu #links {
         width: 100%;
     }
-    menu div {
-        width: 20%;
+    menu #close-button-container {
+        width: 180px;
+    }
+    menu span svg {
+        color: white;
     }
 }

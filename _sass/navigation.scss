@@ -109,6 +109,44 @@ input:checked + .switch:after {
     transform: rotate(-45deg);
 }
 
+#jump-to-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--border-color);
+    text-align: right;
+    text-decoration: none;
+    color: var(--font-color);
+    z-index: 8;
+    transition: 0.2s;
+    opacity: 0;
+    border-bottom: var(--second-border-color) 1px solid;
+}
+#jump-to-top:hover {
+    text-decoration: underline;
+}
+#jump-to-top:active {
+    color: purple;
+}
+#jump-to-top div {
+    margin: auto;
+    max-width: 800px;
+    padding: 2px;
+}
+#jump-to-top div p {
+    margin: 0;
+    display: inline;
+    vertical-align: middle;
+    font-family: "Mulish";
+    font-size: 12px;
+    font-weight: bold;
+}
+#jump-to-top div svg {
+    display: inline;
+    vertical-align: middle;
+}
+
 @media screen and (max-width: 430px) {
     nav a {
         border: none;
