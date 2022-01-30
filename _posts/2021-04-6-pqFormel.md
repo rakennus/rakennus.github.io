@@ -2,6 +2,7 @@
 title: "Lösen quadratischer Gleichungen mit der pq Formel"
 layout: post
 author: Rakennus
+language: de
 ---
 
 ## Was ist die pq Formel?

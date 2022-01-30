@@ -1,0 +1,19 @@
+I"�<p><img src="/assets/images/Untitled1.png" alt="Press2Hold" title="Press2Hold cover" /></p>
+
+<h2 id="toggle-interaction--press2hold--tap-to-interact--for-just-some-interactions">Toggle interaction / Press2Hold / tap to interact :: for just some interactions</h2>
+
+<p>This mod allows you to tap the interaction key to interact when …</p>
+
+<ul>
+  <li>… answering pagers</li>
+  <li>… picking locks</li>
+  <li>… setting up ECM jammers at doors</li>
+</ul>
+
+<p>I think that most interactions are so short, that toggling the interaction is pretty unnecessary. But if you have ever picked a lock for a whole minute, you really want at least at some interactions a toggle function. So I copied the code from the WolfHUD mod, which does this job, and modified it a little.
+Now you can add toggle interaction to every HUD you want.</p>
+
+<p>Put the folder into your mod folder in your PAYDAY 2 directorie</p>
+
+<p><a href="https://modworkshop.net/mod/36087">link to the mod</a></p>
+:ET

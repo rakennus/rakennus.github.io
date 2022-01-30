@@ -66,6 +66,8 @@
     display: flex;
     justify-content: center;
     color: var(--less-important-font-color);
+    border-bottom: 1px var(--border-color) solid;
+    border-top: 1px var(--border-color) solid;
 }
 
 .bubble .post-head .info {
@@ -79,6 +81,10 @@
     margin: 8px;
     font-size: 14px;
     font-weight: bold;
+}
+
+.post img {
+    width: 100%;
 }
 
 pre {

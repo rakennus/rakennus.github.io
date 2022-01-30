@@ -36,11 +36,13 @@ body { margin: 0 auto; max-width: 800px; background-color: var(--background-colo
 
 .post-head .headline { margin: 32px 8px; }
 
-.post-head .info { display: flex; justify-content: center; color: var(--less-important-font-color); }
+.post-head .info { display: flex; justify-content: center; color: var(--less-important-font-color); border-bottom: 1px var(--border-color) solid; border-top: 1px var(--border-color) solid; }
 
 .bubble .post-head .info { display: flex; justify-content: left; color: var(--less-important-font-color); }
 
 .post-head .info p { display: inline; margin: 8px; font-size: 14px; font-weight: bold; }
+
+.post img { width: 100%; }
 
 pre { border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 6px; }
 
