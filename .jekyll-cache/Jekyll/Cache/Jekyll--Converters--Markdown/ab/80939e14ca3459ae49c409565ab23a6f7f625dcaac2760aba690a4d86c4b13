@@ -1,4 +1,5 @@
-I"ì<pre><code class="C#">
+I"Ò<pre>
+<code class="C#">
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -189,7 +190,5 @@ public class FPSPlayer : MonoBehaviour
         crouchValue = 0.5f;
     }
 }
-
-&lt;/code&gt;&lt;/pre&gt;
 </CharacterController></code></pre>
 :ET

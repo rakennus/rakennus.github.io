@@ -5,7 +5,8 @@ author: Rakennus
 language: en
 ---
 
-<pre><code class="C#">
+<pre>
+<code class="C#">
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -196,5 +197,3 @@ public class FPSPlayer : MonoBehaviour
         crouchValue = 0.5f;
     }
 }
-
-</code></pre>
