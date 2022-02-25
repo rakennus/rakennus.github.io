@@ -1,4 +1,5 @@
 ---
-name: table tennis
+title: table tennis
+name: table-tennis
 ---
 
