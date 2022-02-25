@@ -6,16 +6,17 @@
 
 .game-card {
     display: inline-block;
-    background-color: white;
+    background-color: var(--background-color);
     height: 200px;
     width: 300px;
     margin: 8px;
     border-radius: 4px;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px var(--box-shadow-color);
     text-decoration: none;
 }
 
 .game-card h3 {
-    color: var(--less-important-font-color);
+    color: var(--font-color);
     text-align: center;
+    font-family: "Libre Baskervville";
 }
