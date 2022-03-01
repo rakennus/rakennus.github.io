@@ -2,6 +2,18 @@
     margin: 0 20px 2em;
     overflow: auto;
     white-space: nowrap;
+    padding: 4px;
+}
+
+.games h2 {
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Mulish";
+    margin: 8px;
+    padding: 0 0 8px 0;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .game-card {
@@ -9,7 +21,7 @@
     background-color: var(--background-color);
     height: 200px;
     width: 300px;
-    margin: 8px;
+    margin: 4px;
     border-radius: 4px;
     box-shadow: 0 0 20px var(--box-shadow-color);
     text-decoration: none;

@@ -36,10 +36,13 @@ menu #links ul {
     font-family: "Mulish", sans-serif;
     list-style-image: url("/assets/icons/corner-down-right.svg");
     padding: 8px 64px;
+}
+
+menu #links li {
     transition: 0.2s;
 }
 
-menu #links ul:hover {
+menu #links li:hover {
     transform: translate(6px);
 }
 
