@@ -33,6 +33,15 @@ title: Rakennus
   </div>
 </div>
 
+<div class="games bubble">
+  <h2>Just some arcade games</h2>
+  {% for game in site.games %}
+    <a class="game-card" href="/{{ game.name }}">
+      <h3>{{ game.title }}</h3>
+    </a>
+  {% endfor %}
+</div>
+
 {% for post in site.posts %}
 <div class="post bubble">
   <div class="post-head">

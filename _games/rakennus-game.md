@@ -1,3 +1,4 @@
 ---
-name: rakennus's game
+title: rakennus's game
+name: rakennus-game
 ---

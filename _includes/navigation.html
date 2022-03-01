@@ -16,7 +16,13 @@
     <h2>games :</h2>
     <ul>
       {% for game in site.games %}
-      <li><a href="">{{ game.name }}</a></li>
+      <li><a href="/{{ game.name }}">{{ game.name }}</a></li>
+      {% endfor %}
+    </ul>
+    <h2>posts :</h2>
+    <ul>
+      {% for post in site.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
