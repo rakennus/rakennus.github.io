@@ -128,7 +128,7 @@ menu span svg { transform: translate(-50%, -50%); margin: 30px; width: 120px; co
 
 .introduction .profile { position: absolute; top: 16px; left: 0; bottom: 16px; width: 95px; border-right: var(--border-color) 1px solid; display: flex; justify-content: center; align-items: center; }
 
-.introduction div span { width: 70px; height: 70px; border-radius: 50%; border: var(--border-color) 2px solid; background-size: 80px; background-repeat: no-repeat; background-position: -3px -40px; background-image: url(/assets/images/selfie2.jpg); box-sizing: border-box; padding: 8px; }
+.introduction div span { width: 70px; height: 70px; background-color: #16171a; border-radius: 50%; border: var(--border-color) 2px solid; background-size: 100%; background-repeat: no-repeat; background-image: url(/assets/images/profile-image-transparent.png); box-sizing: border-box; padding: 8px; }
 
 .introduction .text { margin: 16px 15px 16px 110px; }
 

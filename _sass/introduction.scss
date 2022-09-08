@@ -20,12 +20,12 @@
 .introduction div span {
     width: 70px;
     height: 70px;
+    background-color: #16171a;
     border-radius: 50%;
     border: var(--border-color) 2px solid;
-    background-size: 80px;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: -3px -40px;
-    background-image: url(/assets/images/selfie2.jpg);
+    background-image: url(/assets/images/profile-image-transparent.png);
     box-sizing: border-box;
     padding: 8px;
 }
